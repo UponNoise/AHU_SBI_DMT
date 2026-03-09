@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>StatPlus:mac What's New</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >	
+<link href="css/font-awesome.min.css" rel="stylesheet">  
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/remark-latest.min.js"></script>
+<link href="css/slides.css" rel="stylesheet">      
+  </head>
+  <body>
+    <textarea id="source">
+
+##What's New v6.7
+#### Applies to: StatPlus:mac
+<br/><br/>
+While version 7 is on its way (beta is available), we are glad to finally release version 6.7 with improvements that should make it easier for you to do your work:
+* Support of the latest Excel 2019 builds and macOS Mojave.
+<br><b>If you are using macOS Mojave or plan to upgrade soon – please see next slide.</b>
+* Updated data input window from v7 beta to manage options easier.
+* Standalone spreadsheet: improved export, new panels to edit chart and find cells.
+* A few improved commands: extra statistics and confidence bands.
+* The bug with "obsolete version" is fixed.
+* App supports dark mode on Mojave for all windows and dialogs, but data input window and standalone spreadsheet appear in the light mode to match Mirosoft Excel.<br>Please share your feedback about the dark mode support and new data analysis commands and we will do our best to include your suggestions with final v7 release.<br>Use the Help->Provide Feedback command.
+<hr>
+<br/><br/>
+
+>Click or press the right-arrow key to discover some new features. <br>Press the left-arrow key or click the right mouse button to return to previous slides.
+---
+## macOS 10.14 Mojave 
+<br/>
+New macOS Mojave includes new security and privacy features that affect every app communicating to another. To use Microsoft Excel or Apple Numbers as a data source you are required to give StatPlus the permission to access data in Excel/Numbers workbooks that are currently open. StatPlus uses the permission to read data from a selected workbook and does not modify your data in any way. When you run an analysis for Excel or Numbers workbook for the first time you will see a system dialog that prompts you to grant access to an app. 
+> *As of today (macOS 10.14.6) there is no way for user to re-authorize the app through the System Preferences – you can revoke a permission at any time from the System Preferences, but you cannot grant permission if once selected `Don't Allow`. 
+To use StatPlus with Microsoft Excel or Apple Numbers please be sure to click the `OK` button in the prompt. If you accidentally disabled access to Excel or Numbers data - please contact us.*
+.row[
+<center> <img src="images/mac_mojave_grantaccess.png" width="315" height="156" alt="macOS Mojave prompt for access to interact with Microsoft Excel"></center>
+]
+
+> For StatPlus ribbon integration with Excel (when supported) you will be also given a prompt to grant access to the Finder app – the permission is required to copy the add-in file to the Microsoft Excel.
+---
+.left-column[
+## Spreadsheet
+### Improvements:
+#### Charts
+]
+.right-column[
+### 
+* Updated built-in spreadsheet allows to tweak charts (change the title of a chart, edit axes, change colors).
+  * Select a chart.
+  * Click the `Format` toolbar button (displays a histogram when a chart is selected).
+  * The `Chart Edit` panel will appear.<br><br>
+<img src="images-whatsnew/whatsnew_edit_charts_regression_bands.gif" width="425" height="325" alt="StatPlus Spreadsheet Edit Scatterplot with Regression Line and Bands">
+]
+---
+.left-column[
+## Spreadsheet
+### Improvements:
+#### Find text
+]
+.right-column[
+### 
+* Use the Find command to search for something in your workbook, such as a particular number or text string. To display the find panel select `Find` from the `Edit` menu or  press `Cmd+F`.<br><br>
+<img src="images-whatsnew/whatsnew_spreadsheet_find_panel.png" width="510" height="390" alt="Built-in Spreadsheet Find Panel">
+
+]
+---
+.left-column[
+## Data Input
+### Improvements
+#### 
+]
+.right-column[
+* Options are grouped into categories according to their usage in the Advanced Options panel.
+* <small>[v6.5+]</small> Select variables from the columns list with double click.
+* <small>[v6.5+]</small> Easily remove a variable/range by clicking on the token arrow &ndash; the same well-known way as in the Mail app.
+.row[
+<img src="images-whatsnew/whatsnew_data_input_window_65.gif" width="520" height="507" alt="StatPlus 6.5 Data input window">
+]
+]
+---
+#  Thanks for watching!
+
+Do you have questions or suggestions? Please let us know! 
+> <a href="https://www.analystsoft.com/en/contact/"> <i class="fa fa-envelope" style="width: 2rem;" aria-hidden="true"></i> Contact Us</a>
+
+> <a href="https://www.facebook.com/analystsoft"> <i class="fa fa-facebook-f"  style="width: 2rem;" aria-hidden="true"></i> Facebook</a>
+
+> <a href="https://twitter.com/statplusio"> <i class="fa fa-twitter"  style="width: 2rem;" aria-hidden="true"></i> Twitter</a>
+    </textarea>
+    
+
+<!-- ready to launch? -->
+<script>
+      var slideshow = remark.create({
+     //   ratio: '16:9',
+        navigation: { click: true,
+       //  scroll: false 
+    }
+});      
+    </script>
+  </body>
+</html>

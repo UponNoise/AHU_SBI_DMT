@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>StatPlus:mac What's New</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" >	
+<link href="css/font-awesome.min.css" rel="stylesheet">  
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/remark-latest.min.js"></script>
+<link href="css/slides.css" rel="stylesheet">      
+  </head>
+  <body>
+    <textarea id="source">
+class: inverse
+layout: true
+---
+##What's New v7
+#### Applies to: StatPlus:mac
+<br/><br/>
+* Support of the latest Excel 2019 builds and macOS Catalina.
+* Data analysis commands include new ones from public and insider iPad versions (contact us to get access for insider builds). See slide #3 for details.
+<br>
+* <b>If you have macOS 10.14/10.15 or plan to upgrade soon – please read the next slide.</b>
+* Standalone spreadsheet: improved export, new panels to edit chart and find cells.
+* The bug with "obsolete version" is fixed.
+* Improved dark mode for all windows and dialogs.
+<hr>
+<i class="fa fa-commenting-o" aria-hidden="true"></i> Please share your feedback about the dark mode support and new data analysis commands and we will do our best to include your suggestions with next release.
+<br>Use the Help->Provide Feedback command.
+<hr>
+<br/><br/>
+
+>Click or press the right-arrow key to discover some new features. <br>Press the left-arrow key or click the right mouse button to return to previous slides.
+---
+## <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> macOS 10.14 Mojave/10.15 Catalina
+<br/>
+macOS 10.14/10.15 include security and privacy features that affect every app communicating to another. To use Microsoft Excel or Apple Numbers as a data source you are required to allow access to data in Excel/Numbers workbooks that are currently open. StatPlus uses the permission to read data from a selected workbook and does not modify your data in any way. When you run an analysis for Excel or Numbers workbook for the first time you will see a system dialog that prompts you to grant access to an app.
+> *As of today there is no way for user to re-authorize the app through the System Preferences – you can revoke a permission at any time from the System Preferences, but you cannot grant permission if once selected `Don't Allow`. 
+To use StatPlus with Microsoft Excel or Apple Numbers please be sure to click the `OK` button in the prompt. If you accidentally disabled access to Excel or Numbers data - please **contact us**.*
+.row[
+<center> <img src="images/mac_mojave_grantaccess.png" width="315" height="156" alt="macOS Mojave prompt for access to interact with Microsoft Excel"></center>
+]
+
+> For StatPlus ribbon integration with Excel (when supported) you will be also given a prompt to grant access to the Finder app – the permission is required to copy the add-in file to the Microsoft Excel.
+---
+.left-column[
+## Analysis
+### Improvements
+#### 
+]
+.right-column[
+* Normality tests report includes confidence intervals and Q-Q plots (v6.9+ added Shapiro-Francia test).
+* Linear regression report includes two heteroscedasticity tests (more tests are available with separate command - `Heteroscedasticity Tests`) and Q-Q plot for residuals. Also a new option allows to choose type of residuals to plot.
+* Kaplan-Meier report includes Gehan-Breslow-Wilcoxon and Tarone-Ware tests in addition to Logrank test.
+* Minor report improvements for Life Tables and Compare ROC Curves commands.
+* Scatterplot allows to produce combined plot by groups.
+* Unit root test command produces more precise MacKinnon p-values.
+* Please let us know what data analysis features are you missing and get access to insider builds:
+<br>Use the `Help->Provide Feedback` command or <a href="http://www.analystsoft.com/en/contact/">click here</a>.
+]
+---
+.left-column[
+## Spreadsheet
+### Improvements:
+#### Charts
+]
+.right-column[
+### 
+* Updated built-in spreadsheet allows to tweak charts (change the title of a chart, edit axes, change colors).
+  * Select a chart.
+  * Click the `Format` toolbar button (displays a histogram when a chart is selected).
+  * The `Chart Edit` panel will appear.<br><br>
+<img src="images-whatsnew/whatsnew_edit_charts_regression_bands.gif" width="425" height="325" alt="StatPlus Spreadsheet Edit Scatterplot with Regression Line and Bands">
+]
+---
+.left-column[
+## v6.5
+### Improvements:
+#### Find text
+]
+.right-column[
+### 
+* Use the Find command to search for something in your workbook, such as a particular number or text string. To display the find panel select `Find` from the `Edit` menu or  press `Cmd+F`.<br><br>
+<img src="images-whatsnew/whatsnew_spreadsheet_find_panel.png" width="510" height="390" alt="Built-in Spreadsheet Find Panel">
+
+]
+---
+.left-column[
+## v6.5
+### Improvements
+#### 
+]
+.right-column[
+* Options are grouped into categories according to their usage in the Advanced Options panel.
+* Select variables from the columns list with double click.
+* Easily remove a variable/range by clicking on the token arrow &ndash; the same well-known way as in the Mail app.
+.row[
+<img src="images-whatsnew/whatsnew_data_input_window_65.gif" width="520" height="507" alt="StatPlus 7 Data input window">
+]
+]
+---
+# <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Thanks for watching!
+
+Do you have questions or suggestions? Please let us know! 
+> <a href="https://www.analystsoft.com/en/contact/"> <i class="fa fa-envelope" style="width: 2rem;" aria-hidden="true"></i> Contact Us</a>
+
+> <a href="https://www.facebook.com/analystsoft"> <i class="fa fa-facebook-f"  style="width: 2rem;" aria-hidden="true"></i> Facebook</a>
+
+> <a href="https://twitter.com/statplusio"> <i class="fa fa-twitter"  style="width: 2rem;" aria-hidden="true"></i> Twitter</a>
+    </textarea>
+    
+
+<!-- ready to launch? -->
+<script>
+      var slideshow = remark.create({
+     //   ratio: '16:9',
+        navigation: { click: true,
+       //  scroll: false 
+    }
+});      
+    </script>
+  </body>
+</html>

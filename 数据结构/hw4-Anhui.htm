@@ -1,0 +1,407 @@
+<html>
+
+<head>
+<title>CSE214 Homework</title>
+</head>
+
+<body bgcolor="#FFFFFF" style="margin:2em">
+
+<h2 align="center"><img border="0" src="http://www.cs.stonybrook.edu/~cse214/images/logo.gif" width="200" height="100">&nbsp; <font
+color="#800080"><br>
+</font><font color="#808000" face="Arial">HOMEWORK - AUTUMN 2024</font></h2>
+
+<hr>
+
+<h3><font face="Arial"><strong>HOMEWORK 4 - Sunday, Nov. 24<sup>th</sup>                      
+ before 7PM (China time)<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</strong></font></h3>
+
+<p><font face="Arial"><strong>REMINDERS: 
+<ul>
+<li>Be sure your code follows the <a href="http://www.cs.sunysb.edu/~cse214/codingstyle.htm">coding
+style</a> for CSE214. </li>
+
+<li>Make sure you read the warnings about <a href="http://www.cs.sunysb.edu/~cse214/courseinfo.htm">academic
+dishonesty</a>. <i>Remember, all work you submit for homework or exams MUST be your own work.</i> </li>
+
+<li>Submit Assignment: upload and submit your assignment in QQ Group.  </li>
+<li><span style="color:red">You are not allowed to use Java API Tree, ArrayList, Vector, LinkedList or any other Java API Data Structure classes to implement this assignment.</span></li>
+<li>You may use Scanner, InputStreamReader, or any other class that you wish for keyboard input.</li>
+	
+</ul>
+</font></p>
+
+<p><strong>
+ 
+Design a program that will be used as a versatile decision-making system based on user input.
+There are several places where this application can be used. An example is online Technical Support
+for a product or group of products. A series of questions might be asked and based on
+the answers, a different branch of questions will be asked as follow-up-questions to
+determine exactly how to help the user. Another example is a telephone  Technical Support,
+like a 1-800 number. When calling a 1-800 number, you might communicate with
+a machine. A series of questions are asked and as answers you typically press the numbers
+on the keypad, 1-9. After determining exactly what the problem is, a simple answer is
+usually possible.
+<br>
+<br>
+In this assignment, you will use Ternary (3-ary) trees to represent the flow of data. In each node
+in the Ternary tree there will be a question to ask. The "answers" will be branches towards more 
+questions in the tree. <i>For the normal assignment, it will be a
+Ternary (3-ary) tree, meaning that any node can have at most three children. 
+The extra credit part of this assignment should handle 9-ary trees (up to 9 children).</i> For example:
+<br>
+<center><img src="http://www.cs.stonybrook.edu/~cse214/hw/hw5-images/hw5pic1.jpg"></center>
+<br>
+
+1. Write a fully-documented class named <FONT face="Courier New">TreeNode</font> that stores the data in each node.
+   It should have:
+<ul>
+ <li>Three references to other TreeNodes. Left, Middle, Right.</li> <br>
+ OR
+ <li>An array with three references to other TreeNodes. <i>If you're doing the extra credit, the
+     array should store potentially 9 TreeNodes.</i></li>
+ <li><font face="Courier New">private String label</font><br>
+     The "name" of this TreeNode. It will be used when constructing the tree. More info on labels will follow.</li>
+ <li><font face="Courier New">private String message</font><br>
+     The message will be displayed to the screen. It will either be a question or just a normal message.
+     If this TreeNode has children TreeNodes, it should then traverse one level downwards to each child node to get the prompts
+     as answers. If this TreeNode is a leaf node, then it should just display the message which will act as a solution.</li>
+ <li><font face="Courier New">private String prompt</font><br>
+     The prompt will be displayed to the screen as a possible answer to a question. For example, when
+     starting at the root of the tree, there will be a question (message) to ask, and as possible answers
+     the root will traverse one level downwards each child TreeNode to display the prompt as a possible answer.</li>
+</ul>
+This class should have a constructor, mutator and accessor methods for each instance variable. You may also 
+want to have a method to determine if this TreeNode is a leaf (no children).
+<br>
+<br>
+
+2. Write a fully-documented class named <FONT face="Courier New">Tree</font> that will have a reference to the root of the tree and other useful methods described below:
+<ul>
+<!-- <li>A reference to the root TreeNode.</li>-->
+ <li>Constructor.</li>
+ <li><font face="Courier New">public boolean addNode(String label, String prompt, String message, String parentLabel)</font><br>
+     A method to add a TreeNode to the tree. The location will be a child of parentLabel. The child
+     node should be left justified meaning that it should first be placed in the left most TreeNode reference, then
+     the middle, then the right. A return value of true indicates that the node was successfully added to the tree.
+      Otherwise, the return value is false. More info on the label is in the input file format. <br> 
+     <i>Note: You can use a different method signature if you need to, or define a separate method for adding each child (i.e. addNodeLeft, addNodeMiddle, addNodeRight).</i></li>
+ <li><font face="Courier New">public TreeNode getNodeReference(String label)</font><br>
+     Returns a reference to the TreeNode that has the given label. The return value is <font face="Courier New">null</font> if the label is not found. This may be helpful to implement
+     the above method. Efficiency is not important and you can use any traversal order you wish. Also, if you
+     are more comfortable with placing this method in the TreeNode class, that is perfectly acceptable.
+ <li><font face="Courier New">public void preOrder()</font><br>
+     Traverses the tree in preorder, and prints the contents of the tree to the screen. <br>
+     <i>Note: This method can also be in the TreeNode class.</i></li>
+ <li><font face="Courier New">public void beginSession()</font><br>
+     This method will be used to start the question and answer session.</li>
+</ul>
+Note: You may include additional instance variables or methods as needed. 
+
+<br>
+<br>
+
+3. Write a fully-documented class named <FONT face="Courier New">TreeDriver</font> which contains
+the main() method and it should display a menu:<ul>
+ <li>L (Load input file and build a tree)<br> 
+     Prompt the user for a file name and build a <i>new</i> tree. The entire tree will be recreated each time this menu option is chosen.
+</li>
+
+ <li>H (Start help session) <br>
+    This option will begin asking questions starting from the root of the tree;
+     if there is no tree set up, display an error message. 
+When displaying a question with answers, display each answer on a separate line with a number associated with it, similar
+to a menu. Include another option, 0 (zero) to exit the help session and return to the main menu. For example:
+ <pre>
+ What is the Model of the Washing Machine?
+ 1) WM200
+ 2) WM300
+ 3) WM400
+ 0) Exit Session.
+ </pre>If the node is a leaf, then display the message and go back to the main menu. For example: <pre>
+ You have to put in quarters to start the Washing Machine.
+ Thank you for using our automated help system.
+ (Menu...)</pre>
+  </li> 
+
+<li>T (Traverse the tree in pre-order) <br>
+  Traverse the tree in pre-order and display the label, prompt, and message in each node on a separate line (see sample input/output). <br>The order is root, left subtree, middle subtree, right subtree.   </li> 
+<li>Q (Quit)<br>
+Quit the program.
+</li>
+</ul>
+  
+<br>
+
+<u>INPUT FORMAT</u><br>
+<ul>
+ <li>All strings in the input file will be no longer than 60 characters <i>so that they will not take up
+     more than one line</i>.</li>
+ <li>Blank lines in the input file are to be ignored.</li>
+ <li>The length of the filename will not be longer than 20 characters.</li>
+</ul>
+
+<u>OUTPUT FORMAT</u><br>
+<ul>
+<li>Be sure your prompts and error messages for the user are clear and understandable.
+<li>Be sure to have a menu after each operation.</li>
+</ul>
+
+<u>INPUT FILE FORMAT</u><br>
+<br>
+Since this program is designed to be a versatile decision-making system based on user input, we will be
+using input files so that anyone with a tree of questions/answers can use this program, including but
+not limited to Tech Support. <i>It is strongly recommended that you post any sample text files you create
+in the Blackboard discussion board so that others can test their code.</i> The input file will always
+start with "root" on the first line. Look at the input file comments and ask any questions you may have
+on the discussion board.
+<ul>
+<li> The format of the input file is as follows:
+<pre>
+label, prompt, and message for the root node  (on three separate lines)
+label1 &lt;number-of-children>
+label, prompt, and message for the first child of label1 (on three separate lines)
+label, prompt, and message for the second child of label1 (on three separate lines)
+.....
+label2 &lt;number-of-children>
+label, prompt, and message for the first child of label2 (on three separate lines)
+label, prompt, and message for the second child of label2 (on three separate lines)
+.....
+label3 &lt;number-of-children>
+label, prompt, and message for the first child of label3 (on three separate lines)
+label, prompt, and message for the second child of label3 (on three separate lines)
+.....
+
+</pre>
+
+ <li><u>Label</u> is a one-word string with
+     no spaces that is used during the creation of a tree. It determines the location of a node in the tree.
+     A picture of a tree with only their labels is shown below. Note that labels  do not have to be in any specific format, and they will not necessarily be made of numbers and dashes.</li>
+ <li><u>Prompt</u> is  a string that will be printed to 
+     the screen as a choice or answer. <br>(NOTE: The prompt for the root node should not be printed
+     to the screen. Look at the example text file input.)</li>
+ <li><u>Message</u> is a string that
+     will be displayed to the screen as either question or if the node is a leaf node, as a final message. </li>
+ <li>All strings (label, prompt, message) in the input file will be no longer than 60 characters <i>so that they will not take up
+     more than one line</i>.</li>
+ <li>Another possible line in the input file is the name of a previously defined label 
+     followed by a number, separated by at least one space. This number will indicate the number of children this node has. 
+     The child nodes will then be directly after this line.</li>
+ <li>Any blank lines in the input file are to be ignored. They will help the creator of the input file
+     for readability purposes.</li>
+ <li>If at any point during the reading in of the text file, you encounter an error in the format,
+     you may stop reading in the text file then report a message to the user.</li>
+ <li><i>For the normal assignment, a node can have 0, 1, 2, or 3 children. For EXTRA CREDIT, be ready to handle 0 through
+     nine children.</i></li>
+ <li>A sample input text file: <a href="http://www.cs.stonybrook.edu/~cse214/hw/hw5SampleText1.txt">Sample text file with comments</a> , 
+     <a href="http://www.cs.stonybrook.edu/~cse214/hw/hw5SampleText2.txt">Sample text file without comments</a> (this is the file that must be used to test your program). 
+<li>The visualization of the text file is the second tree below.</li>
+ </li>
+ <li> For simplicity, we will not include comments in our test cases. </li>
+</ul>
+ <br>
+<br><center><img src="http://www.cs.stonybrook.edu/~cse214/hw/hw5-images/hw5pic2.jpg"></center><br>
+
+<br><center><img src="http://www.cs.stonybrook.edu/~cse214/hw/hw5-images/hw5pic3.jpg"></center><br>
+
+<u><font color="red">Extra Credit</font></u><br>
+<ul>
+ <li>Handle any number of child leaves. Note that since we may want this to be used in a telephone service,
+     there will be anywhere from zero to nine children for any given node. <font color="red">2 extra points.</font></li>
+ <li>Display an option to go backwards in the tree (e.g. go back to previous menu). The option should be 'B'. <font color="red">2 extra points.</font></li>
+ <li>If you can come up with a creative idea regarding this programming assignment, then in your comments in the
+beginning of the driver class, write a brief description of what special functions your program does. The grade is determined per TA judgment. <font color="red">Up to 4 extra points.</font></li>
+</ul>
+
+<u>SAMPLE INPUT/OUTPUT</u><br>
+As usual, comments in <font color="green">green</font>, user input in black, and computer output in
+<font color="blue">blue</font>.
+<pre>
+<font color="blue">
+L - Load a Tree.
+H - Begin a Help Session.
+T - Traverse the Tree in preorder.
+Q - Quit
+Choice></font> L
+
+<font color="blue">Enter the file name></font> exampleText.txt
+
+<font color="blue">Tree created successfully!</font>
+<font color="blue">
+L - Load a Tree.
+H - Begin a Help Session.
+T - Traverse the Tree in preorder.
+Q - Quit
+Choice></font> H
+
+<font color="blue">Help Session Starting...
+What Model is the Washing Machine?
+1 WM200
+2 WM300
+3 WM400
+0 Exit Session.
+Choice></font> 1
+
+<font color="blue">What is the problem?
+1 No Water.
+2 Water too hot.
+3 Water too cold.
+0 Exit Session.
+Choice></font> 1
+
+<font color="blue">Is the hose attached?
+1 Yes, but the hose is broken.
+2 No, didn't know there was a hose.
+3 Yes, but still no water.
+0 Exit Session.
+Choice></font> 3
+
+<font color="blue">Make sure the water valve is turned on.
+
+Thank you for using this automated help service!</font>
+
+<font color="blue">
+L - Load a Tree.
+H - Begin a Help Session.
+T - Traverse the Tree in preorder.
+Q - Quit
+Choice></font> H
+
+<font color="blue">Help Session Starting...
+What Model is the Washing Machine?
+1 WM200
+2 WM300
+3 WM400
+0 Exit Session.
+Choice></font> 2
+
+<font color="blue">What is the problem?
+1 Machine won't start.
+2 Machine ends too early.
+3 Machine knobs are broken.
+0 Exit Session.
+Choice></font> 1
+
+<font color="blue">Is the machine plugged in?
+1 Yes, but an error is displayed
+2 I didn't know there was a plug.
+3 Yes, but still won't turn on.
+0 Exit Session.
+Choice></font> 2
+
+<font color="blue">Try plugging it in the back.
+
+Thank you for using this automated help service!</font>
+
+<font color="blue">
+L - Load a Tree.
+H - Begin a Help Session.
+T - Traverse the Tree in preorder.
+Q - Quit
+Choice></font> T
+
+<font color="blue">Traversing the tree in preorder: <font color="green">// Visits root, left, middle, then right nodes.</font>
+Label: root
+Prompt: Root Node
+Message: What Model is the Washing Machine?
+
+Label: 1
+Prompt: WM200
+Message: What is the problem?
+
+Label: 1-1
+Prompt: No Water.
+Message: Is the hose attached?
+
+Label: 1-1-1
+Prompt: Yes, but the hose is broken.
+Message: Purchase a new hose.
+
+Label: 1-1-2
+Prompt: No, didn’t know there was a hose.
+Message; Plug it in the back.
+
+Label: 1-1-3
+Prompt: Yes, but still no water.
+Message: Make sure the water valve is turned on.
+
+Label: 1-2
+Prompt: Water too hot.
+Message: Turn the temperature knob to warm.
+
+Label: 1-3
+Prompt: Water too cold.
+Message: Turn the temperature knob to warm.
+
+Label: 2
+Prompt: WM300
+Message: What is the problem?
+ 
+Label: 2-1
+Prompt: Machine won’t start..
+Message: Is the machine plugged in?
+
+Label: 2-1-1
+Prompt: Yes, but an error is displayed, “Fuser out.”
+Message: We’ll send someone over.
+
+Label: 2-1-2
+Prompt: I didn’t know there was a plug.
+Message: Try plugging it in the back.
+
+Label: 2-1-3
+Prompt: Yes, but still won’t turn on.
+Message: Call an Electrician.
+
+Label: 2-2
+Prompt: Machine ends too early.
+Message: Turn the timer knob.
+
+Label: 2-3:
+Prompt: Machine knobs are broken.
+Message: We’ll send someone over.
+
+Label: 3
+Prompt: WM400
+Message: What is the problem?
+
+Label: 3-1
+Prompt: My clothes are wet.
+Message: Great! Now purchase a dryer.
+
+Label 3-2
+Prompt: Lid won’t close.
+Message: Call a repair man to fix it.</font>
+
+<font color="blue">
+L - Load a Tree.
+H - Begin a Help Session.
+T - Traverse the Tree in preorder.
+Q - Quit
+Choice></font> Q
+
+<font color="blue">Thank you for using our automated help services!</font>
+<font color="green">// Program terminated normally...</font>
+
+
+</pre>
+
+</strong></p>
+<hr>
+
+<P align=center><FONT face=Arial color=#800000><STRONG><A 
+href="http://www.cs.sunysb.edu/~cse214/courseinfo.htm">Course Info</A> | <A 
+href="http://www.cs.sunysb.edu/~cse214/schedule.htm">Schedule</A> | <A 
+href="http://www.cs.sunysb.edu/~cse214/sections.htm">Sections</A> | <A 
+href="http://www.cs.sunysb.edu/~cse214/announcements.htm">Announcements</A> | <A 
+href="http://www.cs.sunysb.edu/~cse214/homework.htm">Homework</A> | <A 
+href="http://www.cs.sunysb.edu/~cse214/exams.htm">Exams</A> | <A 
+href="http://www.cs.sunysb.edu/~cse214/help.htm">Help/FAQ</A> | <A 
+href="http://www.cs.sunysb.edu/~cse214/grades.htm">Grades</A> | <A 
+href="http://www.cs.sunysb.edu/~cse214/index.html">HOME</A> 
+</strong></font></p>
+
+</body>
+</html>

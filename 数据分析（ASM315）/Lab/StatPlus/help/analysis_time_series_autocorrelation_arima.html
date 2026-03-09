@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>StatPlus Help - Autocorrelation and Partial Autocorrelation</title>
+<link href="css/metro-bootstrap.css" rel="stylesheet">
+    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/help6.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+
+</head>
+<body class="nav-md">
+
+	<div class="container body">
+		<div class="main_container">	
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+
+					<div class="navbar nav_title" style="border: 0;">
+						<a href="index.html" class="site_title"><i class="fa fa-home"></i> <span>Help</span></a>
+					</div>
+					<div class="clearfix"></div>
+					<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+						<div class="menu_section">
+							<ul class="nav side-menu ">
+<li><a><i class="fa fa_big">B</i> Basic Statistics <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+ <li><a href="analysis_basic_statistics_descriptive_statistics.html">Descriptive Statistics</a></li>
+                        <li><a href="analysis_basic_statistics_descriptive_statistics_group_variable.html">Descriptive Statistics<br/>(group variable)</a></li>
+						<li><a href="analysis_basic_statistics_one_sample_t-test.html">One-Sample T-Test</a></li>							
+						<li><a href="analysis_basic_statistics_one_sample_z-test.html">One-Sample z-Test</a></li>							
+						<li><a href="analysis_basic_statistics_t-test_two-sample_behrens-fisher_welch_pagurova_criteria.html">Compare Means (T-Test)</a></li>							
+<li><a href="analysis_basic_statistics_t-test_two-sample_behrens-fisher_welch_pagurova_criteria.html">Compare Means<br/>(summarized data)</a></li>							
+						<li><a href="analysis_basic_statistics_two_sample_z-test.html">Two-Sample z-Test</a></li>							
+						<li><a href="analysis_basic_statistics_f-test_two-sample.html">F-Test</a></li>
+						<li><a href="analysis_basic_statistics_linear_correlation_pearson.html">Linear Correlation</a></li>							
+						<li><a href="analysis_basic_statistics_covariation.html">Covariance</a></li>							
+						<li><a href="analysis_basic_statistics_normality_tests.html">Normality Tests</a></li>	
+						<li class="divider"></li>
+						<li><a href="analysis_basic_statistics_frequency_tables.html">Frequency Tables</a></li>						
+						<li><a href="analysis_basic_statistics_cross_tabulation.html">Crosstabs and Chi-Square</a></li>
+						<li><a href="analysis_basic_statistics_histogram.html">Histogram</a></li>				
+									</ul>
+								</li>
+<li><a><i class="fa fa_big">A</i> Analysis of Variance <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                            <li><a href="analysis_analysis_of_variance_one_way_anova.html">One-way ANOVA</a></li>
+							<li><a href="analysis_analysis_of_variance_two_way_anova.html">Two-way ANOVA</a></li>							
+							<li><a href="analysis_analysis_of_variance_three_way_anova.html">Three-way ANOVA</a></li>			
+							<li><a href="analysis_analysis_of_variance_within_subjects_anova.html">Repeated Measures (Within Subjects)</a></li>				
+							<li><a href="analysis_analysis_of_variance_mixed_treatment_by_subjects_anova.html">Mixed Treatment by Subjects</a></li>							
+							<li><a href="analysis_analysis_of_variance_mixed_anova_with_two_treatments.html">Mixed ANOVA with Two Treatments</a></li>														
+							<!--li><a href="javascript:void(0)" class="disabled">General Linear Model (GLM)</a></li-->	
+									</ul>
+								</li>
+<li><a><i class="fa fa_big">R</i> Regression <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                            <li><a href="analysis_regression_multiple_linear_least_squares.html">Multiple Linear Regression</a></li>							
+							<li><a href="analysis_regression_weighted_least_squares_wls_regression.html">Weighted Least Squares</a></li>							
+							<li><a href="analysis_regression_polynomial_regression_model.html">Polynomial Regression</a></li>							
+							<li><a href="analysis_regression_forward_stepwise_regression_model.html">Forward Selection</a></li>							
+<li><a href="analysis_regression_backward_stepwise_elimination_regression_model.html">Backward Stepwise</a></li>							
+<li><a href="analysis_regression_best_subsets_regression_model.html">Best Subsets Regression</a></li>							
+<li><a href="analysis_regression_multiple_binary_logistic_regression_model.html">Binary Logistic</a></li>							
+<!--li><a href="javascript:void(0)" class="disabled">Simultaneous Regression</a></li-->							
+<li><a href="analysis_survival-analysis_cox_proportional_hazards_model_regression.html">Cox Regression</a></li>		
+									</ul>
+								</li>
+<li><a><i class="fa fa_big ">N</i> Nonparametric Statistics <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                         <li><a href="analysis_nonparametric_statistics_2x2_table_chisquare_yates.html">2x2 Tables Analysis</a></li>
+                            <li><a href="analysis_basic_statistics_cross_tabulation.html">Crosstabs and Chi-Square</a></li>
+<li><a href="analysis_nonparametric_statistics_rank_and_percentile.html">Rank and Percentile</a></li>							
+<li><a href="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau.html">Rank Correlations</a></li>							
+<li><a href="analysis_basic_statistics_fechner_correlation.html">Fechner Correlation</a></li>							
+<li><a href="analysis_nonparametric_statistics_comparing_two_independent_samples_mann-whitney_wilcoxon_rank_sum.html">Compare Two Independent</a></li>							
+<li><a href="analysis_nonparametric_statistics_comparing_multiple_independent_samples_kruskal-wallis_anova_median_test.html">Compare Multiple Independent</a></li>							
+<li><a href="analysis_nonparametric_statistics_comparing_two_dependent_samples_wilcoxon_matched_pairs.html">Compare Two Related</a></li>							
+<li><a href="analysis_nonparametric_statistics_comparing_multiple_dependent_samples_friedman_anova_kendall_concordance.html">Compare Multiple Related</a></li>	
+<li><a href="analysis_nonparametric_statistics_cochranq_test.html">Cochran's Q Test</a></li>
+									</ul>
+								</li>
+<li><a><i class="fa fa_big">T</i> Time Series <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                           <li><a href="analysis_time_series_autocorrelation_arima.html">Autocorrelation and Partial ACF</a></li>
+                            <li><a href="analysis_time_series_moving_average_forecast.html">Moving Average</a></li>
+							<li><a href="analysis_time_series_interrupted_series_analysis.html">Interrupted Series Analysis</a></li>		
+							<li class="divider"></li>
+							<li><a href="analysis_time_series_remove_mean.html">Remove Mean</a></li>							
+							<li><a href="analysis_time_series_differences.html">Differences</a></li>							
+							<li><a href="analysis_time_series_exponential_smoothing.html">Exponential Smoothing</a></li>							
+							<li><a href="analysis_time_series_fast_fourier_transoftm_direct_inverse_fft_dft_discrete_fourier.html">Fast Fourier Transform</a></li>	
+									</ul>
+								</li>
+<li><a><i class="fa fa_big">S</i> Survival Analysis <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                        <li><a href="analysis_survival-analysis_probit_regression_finney_ld50_ed50.html">Probit Analysis</a></li>
+                            <li><a href="analysis_survival-analysis_cox_proportional_hazards_model_regression.html">Cox Regression</a></li>
+									</ul>
+								</li>
+<li><a><i class="fa fa_big fa-random"></i> Data <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                            <li><a href="data_matrix_operations.html">Matrix Operations</a></li>
+							<li class="divider"></li>
+							<li><a href="data_sampling_random_sample.html">Random Sample</a></li>							
+                            <li><a href="data_sampling_periodic_sample.html">Periodic Sample</a></li>
+                            <li><a href="data_sampling_conditional_sample.html">Conditional Sample</a></li>	
+<li class="divider"></li>
+							<li><a href="analysis_data_processing_stack_columns.html">Stack Columns</a></li>
+							<li><a href="analysis_data_processing_unstack_column.html">Unstack Column</a></li>
+							<li><a href="analysis_data_processing_standardize_variables_normalize.html">Standardize Variables</a></li>							
+							<li><a href="data_random_numbers_generation_uniform.html">Random Numbers Generation</a></li>
+	
+									</ul>
+								</li>
+<li><a><i class="fa fa_big fa-bar-chart"></i> Charts <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                            <li><a href="analysis_charts_box_plot_box_whiskey.html">Box Plot</a></li>
+<li><a href="analysis_charts_scatterplot.html">Scatter Diagram</a></li>		
+<li><a href="analysis_basic_statistics_histogram.html">Histogram</a></li>			
+<li class="divider"></li>		
+<li><a href="analysis_quality_control_charts.html">X-bar and R Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">X-bar and S Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">CUSUM Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">P Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">C Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">U Chart</a></li>	
+<li><a href="analysis_quality_control_charts.html">I-MR Chart</a></li>	
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+
+					<!--div class="sidebar-footer"></div-->
+				</div>
+			</div><!--div class="col-md-3 left_col"-->
+
+			<!-- top bar -->
+			<div class="top_nav">
+
+				<div class="nav_menu">
+					<nav class="">
+						<div class="nav toggle">
+							<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+						</div>
+						<ul class="nav navbar-nav navbar-right">
+ 	
+            <li class="">
+                <a href="https://www.analystsoft.com/en/contact/"  aria-expanded="false" id="feedbackbtn">
+                  <span class=" fa fa-comment-o"></span> <span>Send </span>Feedback
+                  
+                </a>               
+              </li>		
+ <li class="hidden" >
+                <a href="javascript:;"  aria-expanded="false">
+                  <span class=" fa fa-file-pdf-o"></span> View as PDF                
+                </a>               
+              </li>              
+            <li class="">
+              <a href="pdf/analysis_time_series_autocorrelation_arima.pdf" aria-expanded="false">
+                <span class=" fa fa-file-pdf-o"></span> PDF
+              </a>               
+            </li>   
+            <li class="">
+              <a href="data/Time Series - Autocorrelation.xlsx" aria-expanded="false">
+                <span class=" fa fa-table"></span> Data<span>set</span>
+              </a>               
+            </li>  
+            <li class="">
+              <a style = "display:none;" aria-expanded="false">
+                <span class=" fa fa-youtube-play"></span> Tutorial                  
+              </a>               
+              </li> 
+			  
+            </ul>						
+
+					</nav>
+				</div>
+			</div><!-- / top bar -->
+<div class="right_col" role="main">   
+<div class="container_content"><div class="row" style=""><div class="col-xs-12 helpcontent" style="">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"Lucida Grande CY";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	
+	font-size:11.0pt;
+	}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#262626;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	
+	page-break-after:avoid;
+	font-size:13.0pt;
+	
+	color:#4F81BD;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	
+	page-break-after:avoid;
+	font-size:14.0pt;
+	}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	
+	page-break-after:avoid;
+	font-size:11.0pt;
+	
+	color:#243F60;
+	font-weight:normal;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Comment Text Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	
+	font-size:10.0pt;
+	}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+
+
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Comment Subject Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	font-size:10.0pt;
+	
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Lucida Grande CY";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	
+	font-size:11.0pt;
+	}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	
+	font-size:11.0pt;
+	}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	
+	font-size:11.0pt;
+	}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	
+	font-size:11.0pt;
+	}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#262626;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	
+	font-weight:bold;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-link:"Comment Text";
+	}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Lucida Grande CY";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	
+	color:#4F81BD;
+	font-weight:bold;}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-link:"Comment Subject";
+	
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	
+	color:#243F60;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Cambria","serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:56.7pt 42.5pt 56.7pt 85.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style><div class=WordSection1>
+
+<div style='border:none;padding:0in 0in 4.0pt 0in'>
+
+<p class=MsoTitle>Autocorrelation</p>
+
+</div>
+
+<p class=MsoNormal style='text-indent:35.4pt'>Autocorrelation is the
+correlation between observations that are <i>n</i> time periods apart. It
+measures the relationship between <i>lagged values</i> of a time series, just
+as Pearson's correlation measures the degree of a linear relationship between
+two variables. Autocorrelation function is used in econometric modeling to
+determine stationarity and seasonality.</p>
+
+<h1>How To</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.5in;text-indent:-.25in;line-height:normal'><span
+class=MsoBookTitle><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i></span>Run the <span
+class=MsoBookTitle>Statistics&rarr;Time Series &rarr;Autocorrelation and partial
+autocorrelation</span> command.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:normal'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i>Select a variable containing a time series <i>x<sub>i</sub></i>.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:normal'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i>Enter the value for the lag to the <span class=MsoBookTitle>Lag
+length</span> field. The magnitude of the time lag determines the order of
+autocorrelation coefficient.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:normal'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i>To plot a correlogram check the <span class=MsoBookTitle>Plot ACF</span>
+option. The <span class=MsoBookTitle>Plot Partial Correlations</span> option
+adds partial correlogram to the report.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:normal'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i>Check the <span class=MsoBookTitle>Remove Mean</span> option to
+prepare time series with removed mean.</p>
+
+<p class=MsoListParagraph style='margin-bottom:6.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-.25in;line-height:normal'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i>Use the <b><span
+style='font-variant:small-caps;letter-spacing:.25pt'>Compute Differenced Series<span
+class=MsoBookTitle> </span></span></b>option to apply the differencing operator
+to the time series. <i>Differencing can help stabilize the mean of a time
+series by removing changes in the level of a time series, and so eliminating
+trend and seasonality </i>[HYN]<i>.</i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in;line-height:normal'><span style='font-family:"Courier New";
+font-variant:small-caps;letter-spacing:.25pt'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>To apply the operator more than once<i> – </i>change the <span
+class=MsoBookTitle>Differences of order (Repeat N times)</span> option value.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:normal'><span style='font-family:"Courier New";font-variant:
+small-caps;letter-spacing:.25pt'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Optionally, change the <span class=MsoBookTitle>Differencing lag </span>value
+ (default value is 1).</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:normal'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i>Optionally, select the standard error calculation algorithm.
+There are two ways to calculate the standard error of the sample
+autocorrelation:</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:normal'><span style='font-family:"Courier New";font-variant:
+small-caps;letter-spacing:.25pt'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>By default we assume that the true MA order of the process is <i>k-1</i>,
+so the variance of <i>r<sub>k</sub></i> is<b><span style='font-variant:small-caps;
+letter-spacing:.25pt'> </span></b> <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=175 height=38
+src="analysis_time_series_autocorrelation_arima_files/image001.png"></span>.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;text-indent:
+-.25in;line-height:normal'><span style='font-family:"Courier New";font-variant:
+small-caps;letter-spacing:.25pt'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>If we assume that the process is white noise (check the <span
+class=MsoBookTitle>White noise standard error</span> option), the standard
+error is approximated by the square root (Box and Jenkins, [BOX]): <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=118 height=38
+src="analysis_time_series_autocorrelation_arima_files/image002.png"></span>. </p>
+
+<h1><span class=MsoBookTitle><span style='font-variant:normal !important'>Assumptions</span></span></h1>
+
+<p class=MsoNormal>        The time series observations are equally spaced. </p>
+
+<h1><span class=MsoBookTitle><span style='font-variant:normal !important'>Results</span></span></h1>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;text-indent:21.3pt'>The report includes the
+overall mean, variance, and a table, showing following statistics for each lag
+value: autocorrelation coefficient <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=13 height=20
+src="analysis_time_series_autocorrelation_arima_files/image003.png"></span>, lower
+and upper confidence limits for <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=13 height=20
+src="analysis_time_series_autocorrelation_arima_files/image003.png"></span>,
+standard error, partial R, Box&#8209;Ljung Q. </p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-justify:inter-ideograph;text-indent:21.3pt'><img width=539
+height=161 src="analysis_time_series_autocorrelation_arima_files/image004.png"></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+class=MsoBookTitle>Overall mean</span> – the mean of all observations in the time
+series.</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+class=MsoBookTitle>Variance</span> – the variance of the time series. </p>
+
+<p class=MsoNormal><span class=MsoBookTitle>PACF (Partial R) Standard Error</span>
+– the standard error of the estimated partial autocorrelation function (PACF) <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=17 height=20
+src="analysis_time_series_autocorrelation_arima_files/image005.png"></span>,
+calculated as <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=98 height=31
+src="analysis_time_series_autocorrelation_arima_files/image006.png"></span> . </p>
+
+<h2><span style='font-size:12.0pt;line-height:115%'>Lags</span><span
+style='font-size:12.0pt;line-height:115%'> table</span></h2>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-justify:
+inter-ideograph'><span class=MsoBookTitle>Correlation</span> <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=13 height=20
+src="analysis_time_series_autocorrelation_arima_files/image003.png"></span> – <i>k<sup>th</sup></i>
+lag autocorrelation. For example, <i>r<sub>1</sub></i> measures the
+relationship between <i>x<sub>t</sub></i> and&nbsp;<i>x<sub>t&#8722;1</sub></i>,
+<i>r<sub>2</sub></i> measures the relationship between&nbsp;<i>x<sub>t</sub></i>&nbsp;and&nbsp;<i>x<sub>t&#8722;2</sub></i>,
+and so on. <span style='color:black'>For a </span>discrete<span
+class=MsoHyperlink><span style='color:black;text-decoration:none'> </span></span><span
+style='color:black'>process with known mean and variance an estimate of the autocorrelation
+may be obtained as </span><span
+style='font-size:11.0pt;
+margin: 2px;'><img width=226 height=30
+src="analysis_time_series_autocorrelation_arima_files/image007.png"></span>,
+where <span style='color:black'>&nbsp;(x<sub>1</sub>, x<sub>2</sub>, ….x<sub>n</sub>)
+are observations, </span><span style='font-size:11.0pt;
+margin: 2px;'><img width=8
+height=20 src="analysis_time_series_autocorrelation_arima_files/image008.png"></span> -
+mean<span style='color:black'>. </span></p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-justify:
+inter-ideograph'><span class=MsoBookTitle>LCL, UCL</span> are the lower and
+upper confidence limits for <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=13 height=20
+src="analysis_time_series_autocorrelation_arima_files/image003.png"></span> at
+selected alpha.</p>
+
+<p class=MsoNormal style='margin-left:35.4pt'><span class=MsoBookTitle>R
+Standard Error</span> – standard error for <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=13 height=20
+src="analysis_time_series_autocorrelation_arima_files/image003.png"></span>.</p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-justify:
+inter-ideograph'><span class=MsoBookTitle>Partial R (PACF)</span> – estimated
+partial autocorrelation <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=17 height=20
+src="analysis_time_series_autocorrelation_arima_files/image005.png"></span>.
+Partial autocorrelation is the correlation between a time series and its lags
+with the effects of lower order lags held constant, and so it further removes
+the linear ties between the lagged series. Partial autocorrelation function
+(PACF) is calculated using the Durbin-Levinson algorithm [QEN]: <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=172 height=39
+src="analysis_time_series_autocorrelation_arima_files/image009.png"></span>.</p>
+
+<p class=MsoNormal style='margin-left:35.4pt;text-align:justify;text-justify:
+inter-ideograph'>PACF can reveal the presence of the autoregressive process in
+the time series.</p>
+
+<p class=MsoNormal style='margin-left:35.4pt'><span class=MsoBookTitle>Box-Ljung
+Q</span> – a measure of autocorrelation. Box-Ljung Q statistic is chi-squared
+distributed with degrees of freedom <i>k-p-q</i>, where <i>p</i> and <i>q</i>
+are autoregressive and moving average orders, respectively.<br>
+At lag <i>k</i>, the Box-Ljung statistic is defined as: <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=149 height=31
+src="analysis_time_series_autocorrelation_arima_files/image010.png"></span>. </p>
+
+<h2><span class=Heading4Char><span style='font-size:12.0pt;line-height:115%'>Correlograms</span></span></h2>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>Correlograms
+(autocorrelation and partial autocorrelation plots) are useful for preliminary
+identification of an ARIMA model. </p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:56.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-.25in'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Compare the sample correlogram to the theoretical correlogram for
+a stationary process.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:56.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-.25in'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If the time series is stationary – the ACF declines to zero
+almost immediately.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:56.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-.25in'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If the plot looks non-stationary, try to identify the trend and
+apply differencing to remove it. If the series is not seasonally adjusted, it
+may need special treatment.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:56.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-.25in'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Positive autocorrelations are often found among the economic
+times series due to the persistence associated with business cycles and periods
+of expansionor recession.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:56.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-.25in'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Moving average processes have the ACF with spikes for the first lags
+and the PACF shows exponential decay. The number of spikes indicates the order
+of the moving average. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:56.0pt;text-align:justify;
+text-justify:inter-ideograph'>&nbsp;</p>
+
+<table class=MsoTableMediumShading1Accent1 border=1 cellspacing=0
+ cellpadding=0 width=567 style='margin-left:40.85pt;border-collapse:collapse;
+ border:none'>
+ <tr>
+  <td width=312 valign=top style='width:233.9pt;border:solid #7BA0CD 1.0pt;
+  border-right:none;background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:0in'><b><i><span
+  style='font-size:9.0pt;line-height:115%'>ACF shows exponential decay</span></i></b></p>
+  </td>
+  <td width=255 valign=top style='width:191.35pt;border:solid #7BA0CD 1.0pt;
+  border-left:none;background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:0in'><span
+  style='font-size:9.0pt;line-height:115%'>Time series is stationary.</span></p>
+  <p class=MsoListParagraphCxSpLast style='margin-left:0in'><span
+  style='font-size:9.0pt;line-height:115%'>Autoregressive model.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=312 valign=top style='width:233.9pt;border-top:none;border-left:
+  solid #7BA0CD 1.0pt;border-bottom:solid #7BA0CD 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin-left:0in'><b><i><span
+  style='font-size:9.0pt;line-height:115%'>Long runs of positive
+  autocorrelations</span></i></b></p>
+  </td>
+  <td width=255 valign=top style='width:191.35pt;border-top:none;border-left:
+  none;border-bottom:solid #7BA0CD 1.0pt;border-right:solid #7BA0CD 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin-left:0in'><span
+  style='font-size:9.0pt;line-height:115%'>Apply extra differencing.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=312 valign=top style='width:233.9pt;border-top:none;border-left:
+  solid #7BA0CD 1.0pt;border-bottom:solid #7BA0CD 1.0pt;border-right:none;
+  background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin-left:0in'><b><i><span
+  style='font-size:9.0pt;line-height:115%'>ACF slowly declines, there are
+  significant values at large lags or noteworthy spikes</span></i></b></p>
+  </td>
+  <td width=255 valign=top style='width:191.35pt;border-top:none;border-left:
+  none;border-bottom:solid #7BA0CD 1.0pt;border-right:solid #7BA0CD 1.0pt;
+  background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:0in'><span
+  style='font-size:9.0pt;line-height:115%'>Include further moving average terms.</span></p>
+  <p class=MsoListParagraphCxSpLast style='margin-left:0in'><span
+  style='font-size:9.0pt;line-height:115%'>Moving average model with a trend.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=312 valign=top style='width:233.9pt;border-top:none;border-left:
+  solid #7BA0CD 1.0pt;border-bottom:solid #7BA0CD 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin-left:0in'><b><i><span
+  style='font-size:9.0pt;line-height:115%'>Lag 1 is coming to the value of -0.5</span></i></b></p>
+  </td>
+  <td width=255 valign=top style='width:191.35pt;border-top:none;border-left:
+  none;border-bottom:solid #7BA0CD 1.0pt;border-right:solid #7BA0CD 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:0in'><span
+  style='font-size:9.0pt;line-height:115%'>Could be the result of overdifferencing.
+  </span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:0in'><span
+  style='font-size:9.0pt;line-height:115%'>Decrease the order of differencing.</span></p>
+  <p class=MsoListParagraphCxSpLast style='margin-left:0in'><span
+  style='font-size:9.0pt;line-height:115%'>Autoregressive model.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=312 valign=top style='width:233.9pt;border-top:none;border-left:
+  solid #7BA0CD 1.0pt;border-bottom:solid #7BA0CD 1.0pt;border-right:none;
+  background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin-left:0in'><b><i><span
+  style='font-size:9.0pt;line-height:115%'>The PACF correlogram has noteworthy
+  spikes</span></i></b></p>
+  </td>
+  <td width=255 valign=top style='width:191.35pt;border-top:none;border-left:
+  none;border-bottom:solid #7BA0CD 1.0pt;border-right:solid #7BA0CD 1.0pt;
+  background:#D3DFEE;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoListParagraphCxSpLast style='margin-left:0in'><span
+  style='font-size:9.0pt;line-height:115%'>Include extra autoregressive terms.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>&nbsp;</p>
+
+<span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=660 valign=top style='width:495.25pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:10.0pt;line-height:115%'><img width=317 height=229
+  id="Picture 5"
+  src="analysis_time_series_autocorrelation_arima_files/image011.png"></span><span
+  style='font-size:10.0pt;line-height:115%'> <img width=312 height=232
+  id="Picture 7"
+  src="analysis_time_series_autocorrelation_arima_files/image012.png"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><i>The
+correlograms show that the autocorrelation function for the</i><span
+class=MsoBookTitle> GDP</span><i> time series remains significant for the first
+five lags. Even without additional indicators, we can conclude that the given
+time series is non-stationary. However, later we will see that the first order
+differencing restores stationarity.</i></p>
+
+<h1>Example</h1>
+
+<p class=MsoNormal>1. Open the <span class=MsoBookTitle>Time Series -
+Autocorrelation</span> dataset<span class=MsoBookTitle>.<br>
+</span><span class=MsoBookTitle><span style='font-weight:normal'>2.</span> GDP</span>
+variable values are the Estonia gross domestic product (GDP) in millions of
+euros for 2001 – 2015 years (on a quarterly basis).</p>
+
+<p class=MsoNormal>3. Run the <span class=MsoBookTitle><span style='color:#404040'>Statistics&rarr;</span>Time
+Series&rarr;Autocorrelation </span>command.</p>
+
+<p class=MsoNormal>4. Select the <span class=MsoBookTitle>GDP</span> variable as
+time series, enter <span class=MsoBookTitle>25 </span>(half the number of
+observations) as lags count. Check the <span class=MsoBookTitle>Plot&nbsp;ACF</span>
+and <span class=MsoBookTitle>Plot&nbsp;Partial </span>options and leave default
+values for other options.</p>
+
+<p class=MsoNormal>Check the <span class=MsoBookTitle>Difference Lag Values </span>option
+and leave the <span class=MsoBookTitle>Differences of order</span> field equal
+to 1, to get first order differences.</p>
+
+<p class=MsoNormal><img width=422 height=129 id="Picture 2"
+src="analysis_time_series_autocorrelation_arima_files/image013.png"></p>
+
+<p class=MsoNormal>4. Run the command.</p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=660 valign=top style='width:495.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><img width=271
+  height=190 id="Picture 3"
+  src="analysis_time_series_autocorrelation_arima_files/image014.png"><img
+  width=271 height=190 id="Picture 4"
+  src="analysis_time_series_autocorrelation_arima_files/image015.png"><br>
+  <i>ACF and PACF plots for differenced  (d=1) GDP time series</i></p>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>5. The plots above show that the ACF for the GDP remains
+significant and high, fluctuating about zero because the GDP has a trend due to
+its economic nature. As the ACF correlogram shows alternating positive and
+negative values (an indicator of a stationary series), we can assume that the
+differenced time series is stationary and use it for further modeling. The decay
+is not exponential, so it is recommended to run tests for stationarity.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><b>&nbsp;</b></p>
+
+<h1><span class=MsoBookTitle>References </span></h1>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>[BAR]
+Bartlett, M. S. 1946. On the theoretical specification of sampling properties
+of autocorrelated time series. Journal of Royal Statistical Society, Series B,
+8: 27. </p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>[BOX]
+Box, G. E. P., and Jenkins, G. M. 1976. Time series analysis: Forecasting and
+control. San Francisco: Holden-Day. </p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>[QEN]
+Time series analysis. Boston: Duxbury Press. Quenouville, M. H. 1949.
+Approximate tests of correlation in time series. Journal of the Royal
+Statistical Society, Series B, 11: 68.</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style=''>[HYN] Hyndman R., </span><span style=''>Athanasopoulos
+G. (2014)</span><span style=''> <i>Forecasting: principles and
+practice.</i> Published by Otexts.com. Available online at </span><a
+href="../../otexts.com/fpp">otexts.com/fpp/</a></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style=''>[ORD] Principles of Business Forecasting, Keith Ord,
+Robert Fildes. South-Western College Publishing, New York, NY (2012)</span></p>
+
+<p class=MsoNormal style='margin-top:24.0pt;margin-right:0in;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;page-break-after:avoid'>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</div> <!--rightcol-->
+</div><!--main_container-->
+</div> <!--container body-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/helphelpers.js"></script>
+<!-- Can you write a paper on statistics? Let us know. -->
+</body>
+
+</html>

@@ -1,0 +1,460 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+
+<head>
+<title>CSE214 Exam Practice Questions - Part 1</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h2 align="center"><img border="0" src="http://www.cs.sunysb.edu/~cse214/images/logo.gif" width="200" height="100">&nbsp; <font
+color="#800080"><br>
+</font><font color="#800000" face="Arial">EXAMS</font></h2>
+
+<hr>
+
+<h3>EXAM PRACTICE QUESTIONS - MIDTERM 1</h3>
+<!--p><font color="#FF0000" size="4"><b>ANSWERS WILL BE DISCUSSED IN RECITATION #4
+(week of Oct. 10th)<br>
+ANSWERS WILL <u>NOT</u> BE POSTED ONLINE. 
+BE SURE TO REVIEW AND WORK ON THESE PROBLEMS <u>BEFORE</u> ATTENDING RECITATION</b></font></p-->
+<p><font color="#FF0000" size="4"><b><u>DISCLAIMER</u><br>
+<!--THE ACTUAL MIDTERM WILL CONSIST OF MULTIPLE CHOICE QUESTIONS AND TWO PROGRAMMING 
+PROBLEMS.-->  
+
+THESE ARE MERELY PRACTICE PROBLEMS FOR YOU TO WORK ON. THE ACTUAL 
+MIDTERM MAY NOT ASK THESE QUESTIONS IN THE SAME WAY AND MAY INCLUDE OTHER TOPICS 
+THAT WE HAVE DISCUSSED IN CLASS, COMPLETED FOR RECITATION AND HOMEWORK, OR 
+DISCUSSED IN YOUR TEXTBOOK. </b></font></p>
+<!--<p><b><font color="#FF0000" size="4">MIDTERM 1 COVERS CHAPTERS 1-6.</font></b></p>-->
+<b>1. Consider the code fragment below.</b>
+<p class="MsoNormal" style="margin-left:1.0in"><b><span style="font-family:&quot;Courier New&quot;">for
+(x = 1; x &lt;= n; x++)<span style="mso-tab-count:2"><br>
+</span>{<o:p>
+</o:p>
+<br>
+<span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp; </span>a = a + x;<o:p>
+</o:p>
+</span><br>
+<span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;
+</span>for (y = 1; y &lt;= x; y++)<o:p>
+</o:p>
+<br>
+<span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>b
+= b + y;<o:p>
+</o:p>
+<br>
+}</span><o:p>
+</o:p>
+</b></p>
+<p class="MsoNormal" style="text-indent:.5in"><b>Counting only assignment
+statements as operations,<o:p>
+</o:p>
+</b></p>
+<p class="MsoNormal" style="margin-left:1.0in;text-indent:-.25in;mso-list:l4 level2 lfo1;
+tab-stops:list 1.0in"><b>(a)<span style="font-style: normal; font-variant: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+</span>exactly how many operations does this code execute in terms of n? Express this
+answer in closed form.</b></p>
+<p class="MsoNormal" style="margin-left:1.0in;text-indent:-.25in;mso-list:l4 level2 lfo1;
+tab-stops:list 1.0in"><b>(b)<span style="font-style: normal; font-variant: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+</span>what is the order of complexity of this code in terms of n? Express this
+answer as a Big O function in its simplest form.</b></p>
+<b>2. A program runs on a supercomputer to analyze weather data from N weather
+stations. The original execution time of the program is 10 minutes. If the
+amount of data is increased to 16N, approximately how long in minutes will it
+take to run this program if the program has the following number of operations?</b>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(a) O(N)</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(b) O(N<sup>2</sup>)</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(c) O(N log<sub>2</sub>N)</b></p>
+<p><b>3. Complete the following method for IntList assuming IntList is a <u>singly-linked</u>
+list with a reference to the <u>head</u> of the list only.</b></p>
+<p><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><b>public void moveFirstToLast() {<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><b><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">// moves the
+first element of the list to the end of the list<br>
+// by changing data values only<br>
+</span><br>
+<span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp;
+</span>IntNode nodePtr = _____________________________________________;<o:p>
+</o:p>
+</span><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:-22.5pt;margin-bottom:
+0in;margin-left:.25in;margin-bottom:.0001pt"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+1">&nbsp;&nbsp; </span>if (___________________________________________________)
+{<span style="mso-tab-count:1"> </span><o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:-22.5pt;margin-bottom:
+0in;margin-left:.25in;margin-bottom:.0001pt"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b>&nbsp;<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:-22.5pt;margin-bottom:
+0in;margin-left:.75in;margin-bottom:.0001pt;text-indent:.25in"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b>//
+List has 0 or 1 element. No work to do. Just return.<span style="mso-tab-count:
+1">&nbsp;&nbsp;</span></b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>return;<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><b><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1">&nbsp;&nbsp; </span>} else {<o:p>
+</o:p>
+</span><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>// save data from first node<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>int temp = _________________________________________;<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>// copy data values into previous nodes, one by one<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>while (________________________________________) {<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>nodePtr.setData(_______________________________________);<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>nodePtr = _____________________________________________;<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>}<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>// store head data into last node<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal"><b><span style="font-size:11.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>nodePtr.setData(_____________________________________);<o:p>
+</o:p>
+</span><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+1">&nbsp;&nbsp; </span>}</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><b>}<span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b></span></p>
+<b>4. <span style="left: 472; position: absolute; top: -42; width: 12; height: 44; mso-ignore: vglayout; z-index: 0">4.
+</span>Complete the following method for IntList assuming IntList is a <u>circularly</u>-linked
+list with a reference to the <u>head </u>of the list only.<o:p>
+</o:p>
+</b>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b>public void
+moveMaxToHead(<!--int item-->) throws EmptyListException {<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><b><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;">// Swaps the
+maximum element of the list with the head element.<o:p>
+</o:p>
+</span><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1">&nbsp; </span><o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+1">&nbsp;&nbsp; </span>IntNode nodePtr = head;<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1"><b>&nbsp;&nbsp; </b></span><b>IntNode maxPtr = head;<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>// pointer to node with max value<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1"><b>&nbsp;&nbsp; </b></span><b>int temp;<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+1">&nbsp;&nbsp; </span>if (_________________________________) {<span style="mso-tab-count:
+1">&nbsp;&nbsp; </span>// is list empty?<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;
+</span><o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>_______________________________________________________;<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+1">&nbsp;&nbsp; </span>} else {<span style="mso-tab-count:1">&nbsp;&nbsp; </span>//
+search list, setting maxPtr to node with max value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+// until you examine the node before the head node<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>while
+(_______________________________________________) {<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nodePtr
+= _______________________;&nbsp;&nbsp; // advance one node<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>if
+(______________________________________________)<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>maxPtr = nodePtr;<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>// swap first and max
+values<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>temp =
+_____________________________________________;<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>head.setData(_______________________________________);<o:p>
+</o:p>
+<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><b><span style="mso-tab-count:
+2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>maxPtr.setData(_____________________________________);<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:12.0pt;font-family:&quot;Courier New&quot;"><span style="mso-tab-count:
+1"><b>&nbsp;&nbsp; </b></span><b>}</b></span><b><span style="font-family:&quot;Courier New&quot;"><o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><b>}<span style="mso-tab-count:1">
+</span><o:p>
+</o:p>
+</b></span></p>
+<b>5. A list can be implemented as an <span style="font-family:&quot;Courier New&quot;">IntList</span>
+that uses a linked sequence of <span style="font-family:&quot;Courier New&quot;">IntNode</span>s
+or using an array of type <span style="font-family:&quot;Courier New&quot;">int</span>.
+Assume that an <span style="font-family:&quot;Courier New&quot;">int </span>takes
+up 4 bytes in memory, a reference takes up 4 bytes in memory, and an array A is
+defined to hold up to 200 <span style="font-family:&quot;Courier New&quot;">int</span>s.</b>
+<blockquote>
+  <p class="MsoNormal"><b>(a)<span style="font-style: normal; font-variant: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+  </span>If a list has 180 integers in it, which method (array or linked list) is more
+  efficient in terms of memory usage?</b></p>
+  <p class="MsoNormal"><b>(b)<span style="font-style: normal; font-variant: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+  </span>If a list has 20 integers in it, which method (array or linked list) is more
+  efficient in terms of memory usage?</b></p>
+  <p class="MsoNormal"><b>(c)<span style="font-style: normal; font-variant: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;
+  </span>The array and linked list implementations require the same amount of memory if
+  the list has how many elements?<span style="mso-spacerun: yes">&nbsp; </span>(Do
+  not include <span style="font-family:&quot;Courier New&quot;">head</span> in
+  this calculation.)<br style="mso-special-character:line-break">
+  </b></p>
+</blockquote>
+<p class="MsoNormal"><b>6.&nbsp; What is the output of the following algorithm
+(a) if x = 2?&nbsp; (b) if x = 3?<o:p>
+</o:p>
+</b></p>
+<p class="MsoNormal" style="margin-left:1.0in"><span style="font-family:Arial"><b>Let
+S be an empty intStack.<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:1.0in"><b><span style="font-family:Arial">y
+= </span><span style="font-family:Arial">7<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" style="margin-left:1.0in"><span style="font-family:Arial"><b>while
+y &gt; 0 do<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:1.0in"><span style="font-family:Arial"><span style="mso-tab-count:1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b></span><b>if (y mod x </b></span><b>!=<span style="font-family:Arial">
+0)<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>S.push(y)<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" style="margin-left:1.0in"><span style="font-family:Arial"><span style="mso-tab-count:1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b></span><b>else<span style="mso-spacerun:
+yes">&nbsp; </span>output S.pop()<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:1.0in"><span style="font-family:Arial"><span style="mso-tab-count:1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b></span><b>y =</b></span><b><span style="font-family:Arial"> y - 1<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal" style="margin-left:1.0in"><span style="font-family:Arial"><b>while
+not S.isEmpty()<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal" style="margin-left:1.0in"><span style="font-family:Arial"><span style="mso-tab-count:1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b></span><b>output S.pop()<o:p>
+</o:p>
+</b></span></p>
+<p class="MsoNormal"><b><br style="mso-special-character:line-break">
+7. Use the algorithm discussed in class to convert the following infix
+expression into postfix notation by showing the state of the operator stack at
+each point in the conversion.</b></p>
+<h1 align="center" style="margin-left:.25in;text-align:center"><b>A * B / (C +
+D)</b></h1>
+<p><b>8. Let <font face="Courier New">S</font> be a stack that holds data of
+type <font face="Courier New">Object</font>. Assuming <font face="Courier New">a</font>
+is of type <font face="Courier New">Location</font>, explain if each statement
+is correct or not, and why.</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a)&nbsp;&nbsp;&nbsp;&nbsp; <font face="Courier New">S.push(a);</font></b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b)&nbsp;&nbsp;&nbsp; <font face="Courier New">a
+= S.pop();</font></b></p>
+<p><b>9.&nbsp; Let <span style="font-family:&quot;Courier New&quot;">SortedIntList</span>
+be a class that uses <span style="font-family:&quot;Courier New&quot;">IntNode</span>
+nodes to create a <u>singly-linked</u> list such that the data is stored in <u>decreasing</u>
+order in the list. Assume that the class has two private instance variables <font face="Courier New">head</font>
+and <font face="Courier New">tail</font> of type <span style="font-family:&quot;Courier New&quot;">IntNode</span>.
+Write the following methods:</b></p>
+<ul style="margin-top:0in" type="disc">
+  <li class="MsoNormal" style="mso-list:l3 level1 lfo3;tab-stops:list .5in"><b><span style="font-family:&quot;Courier New&quot;">public
+    boolean remove(int item)<br>
+    </span>Removes the item from the sorted list, if it exists, and returns
+    true. Otherwise, returns false.</b></li>
+  <li class="MsoNormal" style="mso-list:l3 level1 lfo3;tab-stops:list .5in"><b><span style="font-family:&quot;Courier New&quot;">public
+    int maximum()<br>
+    </span>Returns the maximum element in the sorted list, if the list is not
+    empty. Otherwise, throws an exception.</b></li>
+</ul>
+<p><b>10.&nbsp; Complete the following method in Java based on its
+specification:</b></p>
+<pre><font size="4"><b>public int evaluate(String postfix)</b></font></pre>
+<pre style="margin-left:.5in"><font size="4"><b>Evaluates the given postfix string using a stack.</b></font></pre>
+<pre><font size="4"><b>      Preconditions: <o:p>
+</o:p>
+</b></font></pre>
+<pre style="text-indent:.5in"><font size="4"><b>- The operands in the postfix string are single-digit integers.</b></font></pre>
+<pre style="text-indent:.5in"><font size="4"><b>- The postfix string contains only operands and operators +,-,*, and /. 
+	(No spaces.)</b></font></pre>
+<pre style="margin-left:.5in"><font size="4"><b>Postconditions:</b></font></pre>
+<pre style="margin-right:-22.5pt;text-indent:.5in"><font size="4"><b>- Returns the integer value of the given postfix string if the string is a 
+	valid postfix string.</b></font></pre>
+<pre><b><font size="4">      Notes:
+      - Integer division is used.
+      - <u>You may assume the input string is a valid postfix expression</u>.</font><o:p>
+</o:p>
+</b></pre>
+<p class="MsoBodyTextIndent3"><i><b>Special note:<br>
+There are 10 possible digits in the string, but you can convert these to
+integers in the<br>
+same way. Do not write a huge <span style="font-family:&quot;Courier New&quot;">switch</span>
+statement or <span style="font-family:&quot;Courier New&quot;">if</span>
+statement with 10 options! <u>THINK!</u></b></i></p>
+<p class="MsoNormal" style="margin-left:.25in">&nbsp;<o:p>
+</o:p>
+</p>
+<p class="MsoNormal" style="margin-left:1.0in;text-indent:-.25in;mso-list:l4 level2 lfo1;
+tab-stops:list 1.0in">&nbsp;</p>
+<p>&nbsp;</p>
+
+<hr>
+<p align="center"><font face="Arial" color="#800000"><strong>
+<a href="http://www.cs.sunysb.edu/~cse214/courseinfo.htm">Course Info</a> | 
+<a href="http://www.cs.sunysb.edu/~cse214/schedule.htm">Schedule</a> | 
+<a href="http://www.cs.sunysb.edu/~cse214/sections.htm">Sections</a> | 
+<a href="http://www.cs.sunysb.edu/~cse214/announcements.htm">Announcements</a> | 
+<a href="http://www.cs.sunysb.edu/~cse214/homework.htm">Homework</a> | 
+<a href="http://www.cs.sunysb.edu/~cse214/exams.htm">Exams</a> | 
+<a href="http://www.cs.sunysb.edu/~cse214/help.htm">Help/FAQ</a> | 
+<a href="../grades.htm">Grades</a> | 
+<a href="http://www.cs.sunysb.edu/~cse214/index.html">HOME</a>
+
+</strong></font></p>
+</body>
+</html>

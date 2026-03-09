@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>StatPlus Help - Rank Correlations [Spearman R, Kendall Tau, Gamma]</title>
+<link href="css/metro-bootstrap.css" rel="stylesheet">
+    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/help6.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+
+</head>
+<body class="nav-md">
+
+	<div class="container body">
+		<div class="main_container">	
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+
+					<div class="navbar nav_title" style="border: 0;">
+						<a href="index.html" class="site_title"><i class="fa fa-home"></i> <span>Help</span></a>
+					</div>
+					<div class="clearfix"></div>
+					<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+						<div class="menu_section">
+							<ul class="nav side-menu ">
+<li><a><i class="fa fa_big">B</i> Basic Statistics <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+ <li><a href="analysis_basic_statistics_descriptive_statistics.html">Descriptive Statistics</a></li>
+                        <li><a href="analysis_basic_statistics_descriptive_statistics_group_variable.html">Descriptive Statistics<br/>(group variable)</a></li>
+						<li><a href="analysis_basic_statistics_one_sample_t-test.html">One-Sample T-Test</a></li>							
+						<li><a href="analysis_basic_statistics_one_sample_z-test.html">One-Sample z-Test</a></li>							
+						<li><a href="analysis_basic_statistics_t-test_two-sample_behrens-fisher_welch_pagurova_criteria.html">Compare Means (T-Test)</a></li>							
+<li><a href="analysis_basic_statistics_t-test_two-sample_behrens-fisher_welch_pagurova_criteria.html">Compare Means<br/>(summarized data)</a></li>							
+						<li><a href="analysis_basic_statistics_two_sample_z-test.html">Two-Sample z-Test</a></li>							
+						<li><a href="analysis_basic_statistics_f-test_two-sample.html">F-Test</a></li>
+						<li><a href="analysis_basic_statistics_linear_correlation_pearson.html">Linear Correlation</a></li>							
+						<li><a href="analysis_basic_statistics_covariation.html">Covariance</a></li>							
+						<li><a href="analysis_basic_statistics_normality_tests.html">Normality Tests</a></li>	
+						<li class="divider"></li>
+						<li><a href="analysis_basic_statistics_frequency_tables.html">Frequency Tables</a></li>						
+						<li><a href="analysis_basic_statistics_cross_tabulation.html">Crosstabs and Chi-Square</a></li>
+						<li><a href="analysis_basic_statistics_histogram.html">Histogram</a></li>				
+									</ul>
+								</li>
+<li><a><i class="fa fa_big">A</i> Analysis of Variance <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                            <li><a href="analysis_analysis_of_variance_one_way_anova.html">One-way ANOVA</a></li>
+							<li><a href="analysis_analysis_of_variance_two_way_anova.html">Two-way ANOVA</a></li>							
+							<li><a href="analysis_analysis_of_variance_three_way_anova.html">Three-way ANOVA</a></li>			
+							<li><a href="analysis_analysis_of_variance_within_subjects_anova.html">Repeated Measures (Within Subjects)</a></li>				
+							<li><a href="analysis_analysis_of_variance_mixed_treatment_by_subjects_anova.html">Mixed Treatment by Subjects</a></li>							
+							<li><a href="analysis_analysis_of_variance_mixed_anova_with_two_treatments.html">Mixed ANOVA with Two Treatments</a></li>														
+							<!--li><a href="javascript:void(0)" class="disabled">General Linear Model (GLM)</a></li-->	
+									</ul>
+								</li>
+<li><a><i class="fa fa_big">R</i> Regression <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                            <li><a href="analysis_regression_multiple_linear_least_squares.html">Multiple Linear Regression</a></li>							
+							<li><a href="analysis_regression_weighted_least_squares_wls_regression.html">Weighted Least Squares</a></li>							
+							<li><a href="analysis_regression_polynomial_regression_model.html">Polynomial Regression</a></li>							
+							<li><a href="analysis_regression_forward_stepwise_regression_model.html">Forward Selection</a></li>							
+<li><a href="analysis_regression_backward_stepwise_elimination_regression_model.html">Backward Stepwise</a></li>							
+<li><a href="analysis_regression_best_subsets_regression_model.html">Best Subsets Regression</a></li>							
+<li><a href="analysis_regression_multiple_binary_logistic_regression_model.html">Binary Logistic</a></li>							
+<!--li><a href="javascript:void(0)" class="disabled">Simultaneous Regression</a></li-->							
+<li><a href="analysis_survival-analysis_cox_proportional_hazards_model_regression.html">Cox Regression</a></li>		
+									</ul>
+								</li>
+<li><a><i class="fa fa_big ">N</i> Nonparametric Statistics <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                         <li><a href="analysis_nonparametric_statistics_2x2_table_chisquare_yates.html">2x2 Tables Analysis</a></li>
+                            <li><a href="analysis_basic_statistics_cross_tabulation.html">Crosstabs and Chi-Square</a></li>
+<li><a href="analysis_nonparametric_statistics_rank_and_percentile.html">Rank and Percentile</a></li>							
+<li><a href="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau.html">Rank Correlations</a></li>							
+<li><a href="analysis_basic_statistics_fechner_correlation.html">Fechner Correlation</a></li>							
+<li><a href="analysis_nonparametric_statistics_comparing_two_independent_samples_mann-whitney_wilcoxon_rank_sum.html">Compare Two Independent</a></li>							
+<li><a href="analysis_nonparametric_statistics_comparing_multiple_independent_samples_kruskal-wallis_anova_median_test.html">Compare Multiple Independent</a></li>							
+<li><a href="analysis_nonparametric_statistics_comparing_two_dependent_samples_wilcoxon_matched_pairs.html">Compare Two Related</a></li>							
+<li><a href="analysis_nonparametric_statistics_comparing_multiple_dependent_samples_friedman_anova_kendall_concordance.html">Compare Multiple Related</a></li>	
+<li><a href="analysis_nonparametric_statistics_cochranq_test.html">Cochran's Q Test</a></li>
+									</ul>
+								</li>
+<li><a><i class="fa fa_big">T</i> Time Series <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                           <li><a href="analysis_time_series_autocorrelation_arima.html">Autocorrelation and Partial ACF</a></li>
+                            <li><a href="analysis_time_series_moving_average_forecast.html">Moving Average</a></li>
+							<li><a href="analysis_time_series_interrupted_series_analysis.html">Interrupted Series Analysis</a></li>		
+							<li class="divider"></li>
+							<li><a href="analysis_time_series_remove_mean.html">Remove Mean</a></li>							
+							<li><a href="analysis_time_series_differences.html">Differences</a></li>							
+							<li><a href="analysis_time_series_exponential_smoothing.html">Exponential Smoothing</a></li>							
+							<li><a href="analysis_time_series_fast_fourier_transoftm_direct_inverse_fft_dft_discrete_fourier.html">Fast Fourier Transform</a></li>	
+									</ul>
+								</li>
+<li><a><i class="fa fa_big">S</i> Survival Analysis <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                        <li><a href="analysis_survival-analysis_probit_regression_finney_ld50_ed50.html">Probit Analysis</a></li>
+                            <li><a href="analysis_survival-analysis_cox_proportional_hazards_model_regression.html">Cox Regression</a></li>
+									</ul>
+								</li>
+<li><a><i class="fa fa_big fa-random"></i> Data <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                            <li><a href="data_matrix_operations.html">Matrix Operations</a></li>
+							<li class="divider"></li>
+							<li><a href="data_sampling_random_sample.html">Random Sample</a></li>							
+                            <li><a href="data_sampling_periodic_sample.html">Periodic Sample</a></li>
+                            <li><a href="data_sampling_conditional_sample.html">Conditional Sample</a></li>	
+<li class="divider"></li>
+							<li><a href="analysis_data_processing_stack_columns.html">Stack Columns</a></li>
+							<li><a href="analysis_data_processing_unstack_column.html">Unstack Column</a></li>
+							<li><a href="analysis_data_processing_standardize_variables_normalize.html">Standardize Variables</a></li>							
+							<li><a href="data_random_numbers_generation_uniform.html">Random Numbers Generation</a></li>
+	
+									</ul>
+								</li>
+<li><a><i class="fa fa_big fa-bar-chart"></i> Charts <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+                            <li><a href="analysis_charts_box_plot_box_whiskey.html">Box Plot</a></li>
+<li><a href="analysis_charts_scatterplot.html">Scatter Diagram</a></li>		
+<li><a href="analysis_basic_statistics_histogram.html">Histogram</a></li>			
+<li class="divider"></li>		
+<li><a href="analysis_quality_control_charts.html">X-bar and R Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">X-bar and S Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">CUSUM Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">P Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">C Chart</a></li>							
+<li><a href="analysis_quality_control_charts.html">U Chart</a></li>	
+<li><a href="analysis_quality_control_charts.html">I-MR Chart</a></li>	
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+
+					<!--div class="sidebar-footer"></div-->
+				</div>
+			</div><!--div class="col-md-3 left_col"-->
+
+			<!-- top bar -->
+			<div class="top_nav">
+
+				<div class="nav_menu">
+					<nav class="">
+						<div class="nav toggle">
+							<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+						</div>
+						<ul class="nav navbar-nav navbar-right">
+ 	
+            <li class="">
+                <a href="https://www.analystsoft.com/en/contact/"  aria-expanded="false" id="feedbackbtn">
+                  <span class=" fa fa-comment-o"></span> <span>Send </span>Feedback
+                  
+                </a>               
+              </li>		
+ <li class="hidden" >
+                <a href="javascript:;"  aria-expanded="false">
+                  <span class=" fa fa-file-pdf-o"></span> View as PDF                
+                </a>               
+              </li>              
+            <li class="">
+              <a href="pdf/analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau.pdf" aria-expanded="false">
+                <span class=" fa fa-file-pdf-o"></span> PDF
+              </a>               
+            </li>   
+            <li class="">
+              <a style = "display:none;" aria-expanded="false">
+                <span class=" fa fa-table"></span> Data<span>set</span>
+              </a>               
+            </li>  
+            <li class="">
+              <a style = "display:none;" aria-expanded="false">
+                <span class=" fa fa-youtube-play"></span> Tutorial                  
+              </a>               
+              </li> 
+			  
+            </ul>						
+
+					</nav>
+				</div>
+			</div><!-- / top bar -->
+<div class="right_col" role="main">   
+<div class="container_content"><div class="row" style=""><div class="col-xs-12 helpcontent" style="">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	
+	font-size:11.0pt;
+	}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#262626;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	color:#545454;
+	font-weight:bold;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	
+	page-break-after:avoid;
+	font-size:14.0pt;
+	
+	font-weight:bold;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Comment Text Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	
+	font-size:10.0pt;
+	}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+
+
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Comment Subject Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	
+	font-size:10.0pt;
+	
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	
+	font-size:11.0pt;
+	}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	
+	font-size:11.0pt;
+	}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	
+	font-size:11.0pt;
+	}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	
+	font-size:11.0pt;
+	}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	color:#C0504D;
+	letter-spacing:.25pt;
+	font-weight:bold;
+	text-decoration:underline;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	color:#0F243F;
+	letter-spacing:.25pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#262626;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Cambria","serif";
+	color:#545454;
+	font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	
+	font-weight:bold;}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-link:"Comment Text";}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-link:"Comment Subject";
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.shorttext
+	{mso-style-name:short_text;}
+span.hps
+	{mso-style-name:hps;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:56.7pt 42.5pt 56.7pt 85.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style><div class=WordSection1>
+
+<div style='border:none;padding:0in 0in 4.0pt 0in'>
+
+<p class=MsoTitle><span style=''>Rank Correlations</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-indent:21.25pt'>The <span class=MsoBookTitle>Rank Correlations </span>command
+computes nonparametric alternatives to the parametric Pearson product-moment
+correlation coefficient – Spearman rank R (<span
+style='font-size:11.0pt;
+margin: 2px;'><img width=11 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image002.png"></span> or
+<span style='font-size:11.0pt;
+margin: 2px;'><img width=8 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image003.png"></span>),
+Kendall Tau and Gamma for all pairs of variables. These coefficients are
+usually used instead of Pearson correlation for variables measured on an
+ordinal scale, variables with a small number of observations or when it is not possible
+to assume that the variables follow a normal distribution. </p>
+
+<h1><span style=''>How To</span></h1>
+
+<p class=MsoNormal style='margin-left:35.7pt;text-indent:-17.85pt'><span
+class=MsoBookTitle><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i></span>Run<span
+class=MsoBookTitle>: Statistics&rarr;Nonparametric Statistics&rarr;</span> <span
+class=MsoBookTitle>Rank Correlations.</span></p>
+
+<p class=MsoNormal style='margin-left:35.7pt;text-indent:-17.85pt;
+line-height:normal'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i>Select the variables
+to correlate.</p>
+
+<p class=MsoNormal style='margin-left:35.7pt;text-indent:-17.85pt'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i>Select the <span
+class=MsoBookTitle>Scatter Diagram</span> option to produce a scatter plot for
+each pair.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i>Null hypothesis is
+defined as H<sub>0</sub>: <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=35 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image004.png"></span><span
+class=MsoBookTitle><span style='font-weight:normal'>. </span></span>Optionally,
+define the alternative hypothesis H<sub>1</sub>:</p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+class=MsoBookTitle><span style='font-family:"Courier New";font-weight:normal'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><span
+class=MsoBookTitle>H<sub>1</sub>: </span><span
+style='font-size:11.0pt;
+margin: 2px;'><img width=35 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image005.png"></span> –
+variables are negatively correlated.</p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+class=MsoBookTitle><span style='font-family:"Courier New";font-weight:normal'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><span
+class=MsoBookTitle>H<sub>1</sub>: </span><span
+style='font-size:11.0pt;
+margin: 2px;'><img width=35 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image006.png"></span><span
+class=MsoBookTitle><span style='font-weight:normal'> </span></span>– variables
+are correlated (two-tailed significance test;<i> default option</i>).</p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in'><span
+class=MsoBookTitle><span style='font-family:"Courier New";font-weight:normal'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><span
+class=MsoBookTitle>H<sub>1</sub>:</span><span
+style='font-size:11.0pt;
+margin: 2px;'><img width=38 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image007.png"></span><span
+class=MsoBookTitle><span style='font-weight:normal'> </span></span>– variables
+are positively correlated.</p>
+
+<p class=MsoNormal style='margin-left:35.7pt;text-indent:-17.85pt'><i class="fa fa-caret-right fa-noinline" aria-hidden="true"></i><b>Pairwise</b> deletion method is used for missing values
+removal. </p>
+
+<h1><span style=''>Assumptions</span></h1>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-indent:21.3pt'>Spearman correlation coefficient uses only the
+ranks of observations rather than the observations itself and therefore the
+assumptions of normality no longer apply (Di Fabio, 2012).</p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-indent:21.3pt'>For Kendall Tau a variable should be measured on an
+ordinal or continuous scale and, similarly to Spearman R, there must be a
+monotonic relationship between variables. </p>
+
+<h1><span class=MsoBookTitle><span style='font-variant:normal !important;
+;letter-spacing:0pt'>Results</span></span></h1>
+
+<p class=MsoNormal style='text-align:justify;text-indent:21.3pt'>Spearman’s Rho,
+Kendall Tau, Gamma and Pearson R are calculated for each pair of the input
+variables. By interpreting the results we can either accept or reject null
+hypothesis H<sub>0</sub> about a relationship between the variables.</p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:justify;text-indent:21.25pt'><span class=MsoBookTitle>Spearman's Rho</span>
+– calculated as Pearson’s correlation coefficient on the ranks of the variables.
+It is less restrictive than the Pearson's r.  Rho varies between -1 and +1.  If
+the coefficient is positive, then both variables are increasing, while negative
+correlation signifies that as the rank of one variable increases, the rank of
+the other variable decreases; ranks of one variable do not covary with the
+ranks of the other variable when <span style='font-size:11.0pt;line-height:
+115%;margin: 2px;'><img
+width=8 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image003.png"></span>=0.</p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+text-indent:21.25pt'>The formula for Spearman Rho is: </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:
+0in;margin-left:.5in;margin-bottom:.0001pt;text-indent:21.25pt'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img
+width=276 height=60
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image008.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>                where <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=33 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image009.png"></span> and
+<span
+style='font-size:11.0pt;
+margin: 2px;'><img width=33 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image010.png"></span> are
+the ranks for the variables <span style='font-size:11.0pt;
+margin: 2px;'><img width=8
+height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image011.png"></span> and
+<span style='font-size:11.0pt;
+margin: 2px;'><img width=8 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image012.png"></span>.
+When ties are present, ranks are adjusted for ties using an average rank for
+each tie group (Conover, 1999).  </p>
+
+<span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-indent:
+21.3pt;line-height:normal'>The formula is often written in terms of differences
+between <span style='font-size:11.0pt;
+margin: 2px;'><img width=9 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image013.png"></span> paired
+ranks <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=116 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image014.png"></span> as:</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;margin-bottom:.0001pt;line-height:normal'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img
+width=175 height=41
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image015.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal'><span
+style='font-size:11.0pt;
+margin: 2px;'><img width=14 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image016.png"></span> and
+<span
+style='font-size:11.0pt;
+margin: 2px;'><img width=14 height=22
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image017.png"></span> are
+the correction terms for ties, defined in a similar way for each variable:  <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=126 height=27
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image018.png"></span>,
+where a <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=17 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image019.png"></span> is
+the number of tied values in the i<sup>th</sup> tie group.</p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-indent:21.3pt;line-height:normal'>When ties are not present the equation
+can be written in a simpler way as:</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img
+width=132 height=41
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image020.png"></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:21.3pt'><span
+class=MsoBookTitle>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:21.3pt'><span
+class=MsoBookTitle>t </span>– the value of the t-test statistic with <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=81 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image021.png"></span>,
+used to test the null hypothesis.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:21.3pt'><span
+style='font-size:11.0pt;
+margin: 2px;'><img width=77 height=38
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image022.png"></span> </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:21.25pt'>The null
+hypothesis states that there is no monotonic association between the two
+variables. The null hypothesis is rejected for a <span class=MsoBookTitle>p&#8209;value</span>
+less than alpha (default value – 0.05) and it is concluded that the correlation
+is statistically significant.</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;text-indent:21.25pt'><span
+class=MsoBookTitle>Kendall Tau</span> – is a Kendall correlation coefficient
+Tau-b, defined as:</p>
+
+<p class=MsoNormal><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img
+width=180 height=40
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image023.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:justify;text-indent:.5in'>where <i>n<sub>c</sub></i><sub> </sub>is
+the number of concordant pairs, <i>n<sub>d </sub>– </i>number of discordant
+pairs or inversions (observations are arranged in opposite directions), and <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=98 height=27
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image024.png"></span>.
+When there are no ties, <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=42 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image025.png"></span> and
+<span
+style='font-size:11.0pt;
+margin: 2px;'><img width=42 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image026.png"></span>,
+the formula becomes <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=109 height=22
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image027.png"></span>;
+otherwise <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=114 height=27
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image028.png"></span>,
+<span
+style='font-size:11.0pt;
+margin: 2px;'><img width=124 height=27
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image029.png"></span> where
+<span
+style='font-size:11.0pt;
+margin: 2px;'><img width=10 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image030.png"></span> is
+the number of ties in the <i>i<sup>th</sup></i> group of tied values for the
+first variable, and <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=13 height=22
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image031.png"></span> is
+the number of ties in the <i>j<sup>th</sup></i> group of tied values for the second
+variable. Tau approaches a normal distribution more rapidly than Spearman’s
+Rho, as the sample size increases and is more accurate when ties are present (Gilpin,&nbsp;1993).
+Tau also varies between -1 and +1.</p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;
+text-align:justify;text-indent:21.25pt'>Kendall Tau represents the degree of
+concordance between ranks of two variables. The greater the number of discordant
+pairs (inversions), the smaller the coefficient is.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'><span
+class=MsoBookTitle>Inversions Count</span> or <span class=MsoBookTitle>D</span>
+–<span class=MsoBookTitle> </span>the total number of inversions <i>n<sub>d</sub></i>.
+Inversion is a pair of elements <i>i </i>and <i>j</i> such that <i>i&nbsp;</i><i>&gt;&nbsp;j</i>
+and rank of <i>X(i)&nbsp;</i><i>&lt;&nbsp;Y(j).</i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:21.3pt'>To
+test the null hypothesis of independence <i>&#964;</i> is transformed into a <span
+class=MsoBookTitle>Z</span>-score <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=15 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image032.png"></span>.
+When sample size is larger than 10 the z-score approximately follows normal
+distribution<i> </i>and is used to compute the <span class=MsoBookTitle>p&#8209;value.
+</span></p>
+
+<p class=MsoNormal><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img
+width=114 height=54
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image033.png"></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;text-align:justify;text-indent:
+21.25pt'><span class=MsoBookTitle>Gamma</span> statistic – a symmetrical
+measure of association between two ordinal variables. Gamma (<span lang=UK>Г</span>)
+is basically equivalent to the basic Kendall Tau, except that all ties are
+excluded from its computation and thus it is preferable to the Kendall Tau-a <span
+style='font-size:11.0pt;
+margin: 2px;'><img width=14 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image034.png"></span> (no
+ties correction) when there are many tied observations (Goodman, Kruskal, 1963).
+Gamma values range from  -1 (negative association) to +1 (positive
+association). Also known as a <i>Goodman and Kruskal's Gamma</i>.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><img
+width=154 height=20
+src="analysis_nonparametric_statistics_rank_correlations_spearman_r_kendall_tau_files/image035.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;text-indent:21.3pt'><span class=MsoBookTitle>Pearson </span>correlation
+coefficient <span class=MsoBookTitle>R</span> illustrates strength and
+direction of the <i>linear</i> relationship between two variables. The Pearson
+R is <b><i>parametric</i></b> and should be taken in consideration only for
+continuous&#8209;level variables that follow at least a near normal
+distribution.</p>
+
+<h1><span style=''>&nbsp;</span></h1>
+
+<h1><span style=''>References</span></h1>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'>Conover, W. J. (1999), Practical
+Nonparametric Statistics, Third Edition, New York: John Wiley &amp; Sons.</p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify'>Di Fabio,
+Richard P. Essentials of Rehabilitation Research: A Statistical Guide to
+Clinical Practice Philadelphia:  F.A. Davis Co.; 2012, 384 p.</p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify'>Gilpin, A. R.
+(1993). Table for conversion of Kendall's Tau to Spearman's Rho within the
+context measures of magnitude of effect for meta-analysis. Educational and
+Psychological Measurement, 53(1), 87-92.</p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify'>Goodman L.
+A., Kruskal W.H., Measures of association for cross-classifications III:
+Approximate sampling theory, J. Amer. Statistical Assoc. 58, 1963, pp. 310-364.
+</p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify'>Marsh, H. W.
+Pairwise deletion for missing data in structural equation models: Nonpositive
+definite matrices, parameter estimates, goodness of fit, and adjusted sample
+sizes. Structural Equation Modeling: A Multidisciplinary Journal, vol. 5, pp.
+22-36, 1998.</p>
+
+<p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+
+</div>
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</div> <!--rightcol-->
+</div><!--main_container-->
+</div> <!--container body-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/helphelpers.js"></script>
+<!-- Can you write a paper on statistics? Let us know. -->
+</body>
+
+</html>
