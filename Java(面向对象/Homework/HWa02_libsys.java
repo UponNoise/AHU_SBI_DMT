@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-public class libsys_R32314015
+public class libsys_
 {
 // Book class
 class Book {
