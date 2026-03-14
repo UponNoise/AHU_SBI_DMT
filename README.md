@@ -13,3 +13,7 @@ AHU石溪学院数媒部分课件，个人使用仅供参考
 2025.3.15
 某23级同学用苹果全家桶拿着贫困补助还要去给学弟学妹推销你的作业答案和课件还有比赛代打论文代写服务吗，
 穷疯活不起了怎么还选个中外合办读————Noise
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=UponNoise/AHU_SBI_DMT&type=Date)](https://star-history.com/#UponNoise/AHU_SBI_DMT&Date)
