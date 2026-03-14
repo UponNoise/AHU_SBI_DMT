@@ -6,7 +6,7 @@ AHU石溪学院数媒部分课件，个人使用仅供参考
 若被用于其他途径与本人无关不要搞我TAT
 
 ---
-需要什么课的资料可以问（大概率我也找不到就是了，可以问问已经在美国的大佬——email: jiale.zheng@stonbrook [DOT] edu）
+需要什么课的资料可以问（大概率我也找不到就是了，可以问问已经在美国的大佬——email: jiale.zheng@stonybrook [DOT] edu）
 有大手子来负责也许能做SBIAHU的仓库？
 
 ---
