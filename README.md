@@ -16,4 +16,10 @@ AHU石溪学院数媒部分课件，个人使用仅供参考
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=UponNoise/AHU_SBI_DMT&type=Date)](https://star-history.com/#UponNoise/AHU_SBI_DMT&Date)
+<a href="https://www.star-history.com/?repos=UponNoise%2FAHU_SBI_DMT&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=UponNoise/AHU_SBI_DMT&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left" />
+ </picture>
+</a>
