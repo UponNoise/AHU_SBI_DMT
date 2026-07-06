@@ -1,0 +1,14 @@
+$ ./target_process.sh with least-privilege vulp
+Last part of target_process.sh output:
+No permission 
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+TIMEOUT after 8s: /etc/passwd was not changed
+
+No test account should be appended:
+telnetd:x:126:134::/nonexistent:/usr/sbin/nologin
+ftp:x:127:135:ftp daemon,,,:/srv/ftp:/usr/sbin/nologin
+sshd:x:128:65534::/run/sshd:/usr/sbin/nologin

