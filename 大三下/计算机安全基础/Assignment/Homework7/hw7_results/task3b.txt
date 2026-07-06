@@ -1,0 +1,48 @@
+Task 3.B: Ubuntu built-in symlink protection
+Protection values:
+sysctl: permission denied on key 'fs.protected_symlinks'
+sysctl: permission denied on key 'fs.protected_regular'
+
+Last part of target_process.sh output:
+Open failed: Permission denied
+No permission 
+No permission 
+Open failed: Permission denied
+No permission 
+No permission 
+Open failed: Permission denied
+Open failed: Permission denied
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+Open failed: Permission denied
+No permission 
+No permission 
+Open failed: Permission denied
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+No permission 
+Open failed: Permission denied
+Attempt 1600: /etc/passwd unchanged
+No permission 
+ls: write error: Broken pipe
+ was not changed
+
+No test account should be appended:
+telnetd:x:126:134::/nonexistent:/usr/sbin/nologin
+ftp:x:127:135:ftp daemon,,,:/srv/ftp:/usr/sbin/nologin
+sshd:x:128:65534::/run/sshd:/usr/sbin/nologin
+
+

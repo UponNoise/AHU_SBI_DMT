@@ -1,0 +1,5 @@
+$ printf '\n' | su test -c 'whoami; id; echo EUID=$EUID'
+Login test with an empty password:
+Password: root
+uid=0(root) gid=0(root) groups=0(root)
+EUID=0

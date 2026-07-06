@@ -1,0 +1,19 @@
+Generated files:
+total 116
+-rw-r----- 1 seed seed    47 Jun  2 01:55 original_sysctl.txt
+-rw-r----- 1 seed seed    17 Jun  2 01:56 summary.txt
+-rw-r----- 1 seed seed   427 Jun  2 01:55 switcher.c
+-rwxr-x--- 1 seed seed   437 Jun  2 01:55 target_process.sh
+-rw-r----- 1 seed seed   472 Jun  2 01:55 task1.txt
+-rw-r----- 1 seed seed   579 Jun  2 01:55 task2a.txt
+-rw-r----- 1 seed seed   239 Jun  2 01:55 task2c.full.log
+-rw-r----- 1 seed seed   510 Jun  2 01:55 task2c.txt
+-rw-r----- 1 seed seed 21252 Jun  2 01:56 task3a.full.log
+-rw-r----- 1 seed seed  1015 Jun  2 01:56 task3a.txt
+-rw-r----- 1 seed seed 37529 Jun  2 01:56 task3b.full.log
+-rw-r----- 1 seed seed  1241 Jun  2 01:56 task3b.txt
+-rw-r----- 1 seed seed   517 Jun  2 01:55 vulp_nosleep.c
+-rw-r----- 1 seed seed   662 Jun  2 01:55 vulp_privilege.c
+-rw-r----- 1 seed seed   536 Jun  2 01:55 vulp_sleep.c
+
+Restoration will run via EXIT trap.
