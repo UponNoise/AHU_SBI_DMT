@@ -38,8 +38,8 @@ AHU 石溪学院数字媒体技术方向课程资料归档。内容以课件、�
 
 <a href="https://www.star-history.com/?repos=UponNoise%2FAHU_SBI_DMT&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&theme=dark&legend=top-left&sealed_token=6yyOCnVxwXAfcgQQaOsVa1KMsDYx_ok_3avGfvvgnVO7Os3OoG2prdxkxGVALaYTAYkm6JGEs8wBI4nDwwBH0qwl9MIATtZoRoc1T7bik0TZM9rRH-nasSMc55YrkUZwo16cldi0znAnw1Jowvwhn5AVS2RE3CD3e-d6Qe3hLAb4mmbr_niyoh2qLBAO" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=6yyOCnVxwXAfcgQQaOsVa1KMsDYx_ok_3avGfvvgnVO7Os3OoG2prdxkxGVALaYTAYkm6JGEs8wBI4nDwwBH0qwl9MIATtZoRoc1T7bik0TZM9rRH-nasSMc55YrkUZwo16cldi0znAnw1Jowvwhn5AVS2RE3CD3e-d6Qe3hLAb4mmbr_niyoh2qLBAO" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=6yyOCnVxwXAfcgQQaOsVa1KMsDYx_ok_3avGfvvgnVO7Os3OoG2prdxkxGVALaYTAYkm6JGEs8wBI4nDwwBH0qwl9MIATtZoRoc1T7bik0TZM9rRH-nasSMc55YrkUZwo16cldi0znAnw1Jowvwhn5AVS2RE3CD3e-d6Qe3hLAb4mmbr_niyoh2qLBAO" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&theme=dark&legend=top-left&sealed_token=p9G2nCa5-PS6mDejwlotFdrhVuCENgU3OKcewi3hrhzqM6CfPIZYqENhRJekAQUi9VHZglbJWI1ALs1107sAwsun9aXE0BdqqMeHT2rSqlc6oeQ69-CqfM6-h18L52Ig4hkCnN6wCRPD-idgJgpTj6vp-8SE7dXvEfUdbiNxABSa46IJN-cfRViBp3hX" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=p9G2nCa5-PS6mDejwlotFdrhVuCENgU3OKcewi3hrhzqM6CfPIZYqENhRJekAQUi9VHZglbJWI1ALs1107sAwsun9aXE0BdqqMeHT2rSqlc6oeQ69-CqfM6-h18L52Ig4hkCnN6wCRPD-idgJgpTj6vp-8SE7dXvEfUdbiNxABSa46IJN-cfRViBp3hX" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=p9G2nCa5-PS6mDejwlotFdrhVuCENgU3OKcewi3hrhzqM6CfPIZYqENhRJekAQUi9VHZglbJWI1ALs1107sAwsun9aXE0BdqqMeHT2rSqlc6oeQ69-CqfM6-h18L52Ig4hkCnN6wCRPD-idgJgpTj6vp-8SE7dXvEfUdbiNxABSa46IJN-cfRViBp3hX" />
  </picture>
 </a>
