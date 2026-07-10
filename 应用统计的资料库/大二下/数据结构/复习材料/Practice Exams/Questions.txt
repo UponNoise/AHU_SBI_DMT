@@ -1,0 +1,20 @@
+final 1.8 1.9 1.13 1.14 1.15 1.16 2.5 2.5 2.7 2.8 2.9 2.10  2.12 3.2 5 7 8 9
+midterm2 practice： 2 3 4 7 8 
+midterm1：9.2 5.3
+midterm2: 5 7 8
+
+Practice2:
+8.(d) There are relevant formulas about this question in the slides, but it is difficult to understand them. Should we just remember them?
+Final:
+1.11 How to determine tail recursion? Is it related to the for loop and the if statement?
+5(b) Why not 7 comparisons?
+1.15,1.16, 3.1, 3.2 and 9: We didn't have courses about C language, should we master the knowledge in these questions? 
+
+continued
+final:1.9  1.11  1.15  2.9  2.11
+midterm2: 1.7
+midterm2practice:7(b)(c)   8(d)
+
+final：1.11；1.15；1.16；2.8；3.2；7；9
+midterm2practice:7（b）；7（c）；8（d）
+

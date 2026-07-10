@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title></title>
+</head>
+<body>
+
+<h2 align="center"><img border="0" src="http://www.cs.sunysb.edu/~cse214/images/logo.gif" width="200" height="100">&nbsp; <font
+color="#800080"><br>
+</font>
+<!--<h2 align="center">&nbsp; <font color="#800080"><br>-->
+</font><font face="Arial" color="#800000">EXAMS</font></h2>
+<hr>
+<h3>MIDTERM EXAM PRACTICE QUESTIONS - MIDTERM 1</h3>
+<!--p><font color="#FF0000" size="4"><b>ANSWERS WILL BE DISCUSSED IN RECITATION #4
+(week of Oct. 10th)<br>
+ANSWERS WILL <u>NOT</u> BE POSTED ONLINE. 
+BE SURE TO REVIEW AND WORK ON THESE PROBLEMS <u>BEFORE</u> ATTENDING RECITATION</b></font></p-->
+<pre> <b>
+
+1.
+(a) n + (1+2+...+n) = n + n(n+1)/2
+(b) O(n^2)
+
+2.
+(a) 10 * 16N/N = 160 min
+(b) 10 * (16N)^2/N^2 = 2560 min
+(c) 10 * (16Nlog16N)/NlogN = 160*log16N/logN min
+	(depends on what N initially was)
+
+3.
+(a) head
+(b) head == null || head.getLink() == null
+(c) head.getData()
+(d) nodePtr.getLink() != null
+(e) nodePtr.getLink().getData()
+(f) nodePtr.getLink()
+(g) temp
+
+4.
+(a) nodePtr == null (or maxPtr == null)
+(b) throw new EmptyListException("error message")
+(c) nodePtr.getLink() != head
+(d) nodePtr.getLink()
+(e) nodePtr.getData() > maxPtr.getData()
+(f) head.getData()
+(g) maxPtr.getData()
+(h) temp
+
+5. (not counting the "head" variable in this case)
+(a) List: 180*8 = 1440 bytes 	Array: 800 bytes	Array is better
+(b) List: 20*8 = 160 bytes	Array: 800 bytes	List is better
+(c) n*8 = 800, so n=100
+
+
+6.
+(a) 7 5 3 1
+(b) 7 4 1 2 5
+
+7.
+OPERATOR STACK		POSTFIX EXPRESSION
+$
+$ 			A
+$ *			A
+$ *			A B
+$ /			A B *
+$ / (			A B *
+$ / ( 			A B * C
+$ / ( +			A B * C
+$ / ( +			A B * C D
+$ /			A B * C D +
+			A B * C D + /
+
+8.
+(a) OK, since the type Location is widened to Object, its parent class,
+    automatically in Java
+(b) NO, the data type returned will be of type Object, which must be
+    narrowed to Location before it is stored in "a".  This can be done
+    using typecasting.
+
+9.
+(a)
+public boolean remove(int item) {
+    	IntNode cursor;
+	if (head == null) return (false);
+	else if (head == tail) { // 1 node list
+		if (head.getData() == item) {
+			head = null;
+			tail = null;
+			return (true);
+		}
+		else return (false);
+	}
+	else { // 2 or more nodes in list
+		if (head.getData() == item) {
+			head = head.getLink();
+			return (true);
+		}
+		cursor = head;
+		while (cursor.getLink() != null) {
+			if (cursor.getLink().getData() == item) {
+				cursor.setLink(cursor.getLink().getLink());
+				if (cursor.getLink() == null)
+					tail = cursor;
+				return (true);
+			}
+			else if (cursor.getLink().getData() < item)
+				return (false);  // can't be there
+			else
+				cursor = cursor.getLink();
+		}
+		return (false);  // not found in entire list
+	}
+}
+
+public int maximum() throws Exception {
+	if (head == null) throw new Exception("list is empty");
+	else return (head.getData());
+}
+
+10.
+
+public int evaluate(String postfix) throws DivisionByZeroException {
+
+	int length = postfix.length();
+	char ch;
+	int index, value;
+	int operand1, operand2;
+	IntStack S = new IntStack();
+
+	for (index = 0; index < length; index++) {
+		ch = postfix.charAt(index);
+		if (Character.isDigit(ch)) {
+			value = (int) ch - (int) '0';
+			S.push(value);
+		}
+		else {
+			operand2 = S.pop();
+			operand1 = S.pop();
+			if (ch == '+')
+				S.push(operand1 + operand2);
+			else if (ch == '-')
+				S.push(operand1 - operand2);
+			else if (ch == '*')
+				S.push(operand1 * operand2);
+			else if (ch == '/') {
+				if (operand2 == 0) throw new
+					DivisionByZeroException("err msg");
+				S.push(operand1 / operand2);
+			}
+		}
+	}
+	return S.pop();
+}
+
+
+</pre>
+
+
+</body>
+</html>
