@@ -1,0 +1,13 @@
+function setWidth(){
+	if(screen.width == 1024){
+		$('.headerwrap').css({'width':1000 + 'px'});	
+		$('.main').css({'width':1000 + 'px'});	
+		$('.left').css({'width':585 + 'px'});
+		$('.right').css({'width':385 + 'px'});
+		$('.tabs .lists li').css({'width':128 + 'px'});
+		$('.inputwords').css({'width':348 + 'px'});	
+	}
+}
+
+setWidth();
+
