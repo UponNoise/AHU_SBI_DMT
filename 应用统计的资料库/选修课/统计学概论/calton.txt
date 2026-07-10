@@ -1,0 +1,294 @@
+# 高尔顿钉板实验 - 简单版本
+galtons_board <- function(n_balls = 1000, n_rows = 10) {
+  # 模拟每个球的路径
+  results <- numeric(n_balls)
+  
+  for (i in 1:n_balls) {
+    # 每个球经过n_rows次随机偏转
+    # 每次偏转：0=向左，1=向右
+    path <- sample(c(0, 1), size = n_rows, replace = TRUE)
+ #给出模拟走10步，每步随机左或右（即向左向右概率1/2）：sample(c(0, 1), size = 10, replace = TRUE)
+ #运行结果[1] 1 0 0 1 1 1 0 1 0 0
+    # 最终位置 = 向右的次数
+    results[i] <- sum(path)
+  }
+  
+  return(results)
+}
+
+# 运行实验
+set.seed(123)  # 设置随机种子以确保结果可重现
+results <- galtons_board(n_balls = 1000, n_rows = 10)
+
+# 查看结果分布
+hist(results, 
+     breaks = seq(-0.5, 10.5, by = 1),
+     main = "高尔顿钉板实验 - 正态分布",
+     xlab = "最终落点位置",
+     ylab = "球的数量",
+     col = "lightblue")
+
+
+
+
+# 增强版：包含更多统计和可视化
+galtons_board_enhanced <- function(n_balls = 500, n_rows = 12, 
+                                   animate = FALSE, delay = 0.1) {
+  
+  # 模拟所有球
+  results <- matrix(0, nrow = n_balls, ncol = n_rows + 1)
+  
+  for (ball in 1:n_balls) {
+    position <- 0  # 起始位置在中间
+    path <- numeric(n_rows + 1)
+    path[1] <- position
+    
+    for (row in 1:n_rows) {
+      # 随机决定向左或向右
+      if (runif(1) < 0.5) {
+        position <- position - 0.5  # 向左
+      } else {
+        position <- position + 0.5  # 向右
+      }
+      path[row + 1] <- position
+    }
+    results[ball, ] <- path
+  }
+  
+  # 最终位置
+  final_positions <- results[, n_rows + 1]
+  
+  # 绘制最终分布
+  par(mfrow = c(2, 2))
+  
+  # 1. 直方图
+  hist(final_positions, 
+       breaks = seq(min(final_positions) - 0.5, max(final_positions) + 0.5, by = 1),
+       main = paste("最终位置分布 (n =", n_balls, ")"),
+       xlab = "位置",
+       ylab = "频率",
+       col = "steelblue",
+       freq = TRUE)
+  
+  # 添加正态分布曲线
+  x_norm <- seq(min(final_positions), max(final_positions), length = 100)
+  y_norm <- dnorm(x_norm, mean = mean(final_positions), sd = sd(final_positions)) * n_balls
+  lines(x_norm, y_norm, col = "red", lwd = 2)
+  legend("topright", legend = "正态分布拟合", col = "red", lwd = 2)
+  
+  # 2. 条形图
+  pos_counts <- table(round(final_positions))
+  barplot(pos_counts,
+          main = "位置计数条形图",
+          xlab = "位置",
+          ylab = "球数",
+          col = "lightcoral")
+  
+  # 3. 密度图
+  plot(density(final_positions),
+       main = "密度估计",
+       xlab = "位置",
+       ylab = "密度",
+       col = "darkgreen",
+       lwd = 2)
+  
+  # 4. QQ图检验正态性
+  qqnorm(final_positions, main = "QQ图 - 正态性检验")
+  qqline(final_positions, col = "red")
+  
+  par(mfrow = c(1, 1))
+  
+  # 返回统计结果
+  cat("=== 高尔顿钉板实验统计 ===\n")
+  cat("球的数量:", n_balls, "\n")
+  cat("行数:", n_rows, "\n")
+  cat("平均位置:", round(mean(final_positions), 3), "\n")
+  cat("标准差:", round(sd(final_positions), 3), "\n")
+  cat("偏度:", round(e1071::skewness(final_positions), 3), "\n")
+  cat("峰度:", round(e1071::kurtosis(final_positions), 3), "\n")
+  
+  return(list(
+    final_positions = final_positions,
+    paths = results,
+    mean = mean(final_positions),
+    sd = sd(final_positions)
+  ))
+}
+
+# 运行增强版实验
+set.seed(2024)
+results_enhanced <- galtons_board_enhanced(n_balls = 1000, n_rows = 12)
+
+
+# 教育演示版本 - 逐步展示
+demo_galtons <- function(n_balls = 500, n_rows = 8) {
+  # 模拟过程
+  paths <- matrix(0, nrow = n_balls, ncol = n_rows + 1)
+  
+  for (i in 1:n_balls) {
+    pos <- 0  # 起始位置
+    for (j in 1:n_rows) {
+      pos <- pos + sample(c(-0.5, 0.5), 1)
+      paths[i, j + 1] <- pos
+    }
+  }
+  
+  # 绘制动画效果（简化）
+  final_pos <- paths[, n_rows + 1]
+  
+  # 计算理论分布
+  x_theory <- seq(min(final_pos), max(final_pos), length = 100)
+  y_theory <- dnorm(x_theory, 
+                    mean = 0, 
+                    sd = sqrt(n_rows/4)) * n_balls
+  
+  # 创建图形
+  par(mfrow = c(1, 2))
+  
+  # 左边：直方图
+  hist(final_pos, 
+       breaks = seq(min(final_pos)-0.25, max(final_pos)+0.25, by=0.5),
+       main = paste("高尔顿钉板 - 实验结果"),
+       xlab = "位置",
+       ylab = "球数",
+       col = "lightblue",
+       border = "white")
+  
+  # 右边：添加理论曲线
+  curve(dnorm(x, mean = 0, sd = sqrt(n_rows/4)) * n_balls / 2,
+        from = min(final_pos), to = max(final_pos),
+        add = FALSE, col = "red", lwd = 2,
+        main = "理论 vs 实际",
+        xlab = "位置", ylab = "密度")
+  
+  hist(final_pos, add = TRUE, freq = FALSE,
+       breaks = seq(min(final_pos)-0.25, max(final_pos)+0.25, by=0.5),
+       col = rgb(0, 0, 1, 0.3))
+  
+  legend("topright", 
+         legend = c("实验结果", "理论正态分布"),
+         fill = c(rgb(0, 0, 1, 0.3), "red"),
+         cex = 0.8)
+  
+  par(mfrow = c(1, 1))
+  
+  # 返回关键统计量
+  list(
+    empirical_mean = mean(final_pos),
+    empirical_sd = sd(final_pos),
+    theoretical_sd = sqrt(n_rows/4),
+    positions = final_pos
+  )
+}
+
+# 运行演示
+demo_result <- demo_galtons(n_balls = 1000, n_rows = 12)
+
+
+
+
+
+交互式Shiny应用版本（需要安装shiny包）
+# install.packages(c("shiny", "ggplot2"))
+
+library(shiny)
+library(ggplot2)
+
+# Shiny应用
+ui <- fluidPage(
+  titlePanel("高尔顿钉板实验模拟器"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("n_balls", "球的数量:",
+                  min = 10, max = 5000, value = 1000, step = 100),
+      sliderInput("n_rows", "行数:",
+                  min = 5, max = 20, value = 12, step = 1),
+      sliderInput("p_right", "向右概率:",
+                  min = 0.1, max = 0.9, value = 0.5, step = 0.1),
+      actionButton("run", "运行实验"),
+      br(), br(),
+      downloadButton("downloadData", "下载数据")
+    ),
+    
+    mainPanel(
+      plotOutput("distributionPlot", height = "600px"),
+      verbatimTextOutput("stats")
+    )
+  )
+)
+
+server <- function(input, output) {
+  
+  experiment_data <- eventReactive(input$run, {
+    n_balls <- input$n_balls
+    n_rows <- input$n_rows
+    p_right <- input$p_right
+    
+    # 模拟实验
+    final_positions <- numeric(n_balls)
+    
+    for (i in 1:n_balls) {
+      # 模拟每个球的路径
+      right_decisions <- rbinom(n_rows, 1, p_right)
+      # 最终位置 = 向右次数 - 向左次数
+      final_positions[i] <- sum(right_decisions) - (n_rows - sum(right_decisions))
+    }
+    
+    list(
+      positions = final_positions,
+      n_balls = n_balls,
+      n_rows = n_rows,
+      p_right = p_right
+    )
+  })
+  
+  output$distributionPlot <- renderPlot({
+    data <- experiment_data()
+    
+    ggplot(data.frame(position = data$positions), aes(x = position)) +
+      geom_histogram(aes(y = ..density..), 
+                     bins = 2*data$n_rows + 1,
+                     fill = "steelblue", 
+                     alpha = 0.7,
+                     color = "black") +
+      stat_function(fun = dnorm,
+                    args = list(mean = mean(data$positions), 
+                               sd = sd(data$positions)),
+                    color = "red", size = 1) +
+      labs(title = paste("高尔顿钉板实验分布 (n =", data$n_balls, ", 行数 =", data$n_rows, ")"),
+           x = "最终位置", 
+           y = "密度") +
+      theme_minimal() +
+      theme(text = element_text(size = 14))
+  })
+  
+  output$stats <- renderPrint({
+    data <- experiment_data()
+    cat("=== 实验统计 ===\n")
+    cat("球数:", data$n_balls, "\n")
+    cat("行数:", data$n_rows, "\n")
+    cat("向右概率:", data$p_right, "\n")
+    cat("平均位置:", round(mean(data$positions), 3), "\n")
+    cat("标准差:", round(sd(data$positions), 3), "\n")
+    cat("理论期望:", round(data$n_rows * (2*data$p_right - 1), 3), "\n")
+    cat("理论方差:", round(data$n_rows * 4 * data$p_right * (1-data$p_right), 3), "\n")
+  })
+  
+  output$downloadData <- downloadHandler(
+    filename = function() {
+      paste("galton_data_", Sys.Date(), ".csv", sep = "")
+    },
+    content = function(file) {
+      data <- experiment_data()
+      write.csv(data.frame(Position = data$positions), file, row.names = FALSE)
+    }
+  )
+}
+
+# 运行Shiny应用
+# shinyApp(ui = ui, server = server)
+
+
+
+

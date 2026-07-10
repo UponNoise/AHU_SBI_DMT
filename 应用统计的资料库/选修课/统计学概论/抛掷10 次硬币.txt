@@ -1,0 +1,71 @@
+# 设置随机种子以确保结果可重复
+set.seed(123)
+
+# 参数设置
+n_flips_per_exp <- 10  # 每次实验抛10次硬币
+p_success <- 0.5       # 每次抛掷正面朝上的概率
+max_experiments <- 10000  # 最大实验次数（重复“抛10次”这个动作的次数）
+theory_expectation <- n_flips_per_exp * p_success  # 理论期望值 = 5
+
+# 模拟：进行 max_experiments 次实验，每次实验抛 n_flips_per_exp 次硬币
+# 结果是一个长度为 max_experiments 的向量，每个元素是一次实验中正面朝上的次数
+head_counts <- rbinom(n = max_experiments, size = n_flips_per_exp, prob = p_success)
+
+# 计算累积的频率（即平均正面朝上次数的运行平均值）
+# cumsum(head_counts) 计算了到当前实验为止，总共出现了多少次正面
+# 1:max_experiments 是实验次数的序列
+# 两者相除，得到的是：进行到第 m 次实验时，平均每次实验的正面次数
+running_mean <- cumsum(head_counts) / (1:max_experiments)
+
+# 开始绘图
+plot(1:max_experiments, running_mean, 
+     type = "l",  # 绘制折线图
+     lwd = 2,     # 线宽
+     col = "steelblue",
+     xlab = "实验次数 (m)", 
+     ylab = "平均每次实验的正面次数 (频率估计)",
+     main = "抛10次硬币实验：频率估计收敛于理论期望 (大数定律演示)",
+     ylim = c(0, 10),  # 设置y轴范围，以便看清收敛过程
+     log = "x")        # x轴使用对数刻度，以便更清晰地观察早期波动
+
+# 添加理论期望线 (y = 5)
+abline(h = theory_expectation, col = "red", lwd = 2, lty = 2)
+
+# 添加图例
+legend("topright", 
+       legend = c("频率估计 (运行平均值)", "理论期望值 (5)"),
+       col = c("steelblue", "red"),
+       lwd = 2,
+       lty = c(1, 2),
+       bty = "n")
+
+# 在图上添加文本，标注最终实验后的频率估计值
+final_estimate <- running_mean[max_experiments]
+text(x = max_experiments * 0.7, 
+     y = theory_expectation + 2,
+     labels = paste("最终估计值 =", round(final_estimate, 4)),
+     col = "darkgreen",
+     cex = 1.1)
+
+
+# 绘制正面次数分布的直方图
+hist(head_counts, 
+     breaks = seq(-0.5, 10.5, by=1),  # 设置分箱，使每个整数值对应一个柱
+     freq = FALSE,  # 显示密度而非频数
+     col = "lightblue",
+     xlab = "正面朝上的次数 (在10次抛掷中)",
+     ylab = "密度 / 概率",
+     main = "抛10次硬币：正面次数的分布 (10000次实验)")
+
+# 添加理论二项分布的概率质量函数（PMF）曲线
+x_theory <- 0:10
+y_theory <- dbinom(x_theory, size = n_flips_per_exp, prob = p_success)
+lines(x_theory, y_theory, type = "b", col = "red", lwd = 2, pch = 19)
+
+# 添加图例
+legend("topright", 
+       legend = c("模拟结果 (密度)", "理论概率 (二项分布)"),
+       col = c("lightblue", "red"),
+       pch = c(15, 19),
+       lwd = c(NA, 2),
+       bty = "n")

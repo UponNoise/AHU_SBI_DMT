@@ -1,0 +1,43 @@
+# 参数设置
+mu <- 1
+sigma2 <- 4
+sigma <- sqrt(sigma2)
+
+# 生成x值
+x <- seq(from = mu - 3.5*sigma, to = mu + 3.5*sigma, length.out = 1000)
+
+# 计算密度函数和分布函数
+density <- dnorm(x, mean = mu, sd = sigma)
+distribution <- pnorm(x, mean = mu, sd = sigma)
+
+# 设置图形布局
+par(mfrow = c(1, 2), mar = c(4, 4, 3, 1))
+
+# 绘制密度函数
+plot(x, density, 
+     type = "l", 
+     lwd = 2, 
+     col = "steelblue",
+     xlab = "x", 
+     ylab = "密度 f(x)",
+     main = bquote(paste("正态分布密度函数: N(", mu, "=", .(mu), ", ", sigma^2, "=", .(sigma2), ")")),
+     ylim = c(0, max(density)*1.1))
+abline(v = mu, col = "red", lty = 2, lwd = 1.5)
+text(x = mu, y = max(density)*0.9, labels = bquote(mu == .(mu)), pos = 4, col = "red")
+
+# 绘制分布函数
+plot(x, distribution, 
+     type = "l", 
+     lwd = 2, 
+     col = "darkorange",
+     xlab = "x", 
+     ylab = "分布函数 F(x)",
+     main = bquote(paste("正态分布分布函数: N(", mu, "=", .(mu), ", ", sigma^2, "=", .(sigma2), ")")),
+     ylim = c(0, 1))
+abline(h = c(0, 0.5, 1), col = "gray60", lty = 3, lwd = 0.8)
+abline(v = mu, col = "red", lty = 2, lwd = 1.5)
+points(mu, 0.5, pch = 19, col = "red")
+text(x = mu, y = 0.4, labels = bquote("(" * mu * ", 0.5)"), pos = 4, col = "red")
+
+# 恢复默认设置
+par(mfrow = c(1, 1))
