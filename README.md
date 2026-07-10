@@ -33,18 +33,13 @@ AHU 石溪学院数字媒体技术方向课程资料归档。内容以课件、�
 - 不保证覆盖所有课程，也不保证内容与当前教学安排一致。
 - 不接受将本仓库内容用于售卖、代写、抄袭、批量搬运或冒充官方资料。
 
+
 ## Star History
 
-Star History 已改用新版 `chart` 接口。由于 GitHub 新规则限制，README 内嵌实时图需要在 Star History 生成加密的 `sealed_token` 后才能稳定显示；不要直接提交 GitHub 明文 token。
-
-[查看 Star History](https://www.star-history.com/?repos=UponNoise%2FAHU_SBI_DMT&type=date&legend=top-left)
-
-```html
 <a href="https://www.star-history.com/?repos=UponNoise%2FAHU_SBI_DMT&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&theme=dark&legend=top-left&sealed_token=REPLACE_WITH_GENERATED_SEALED_TOKEN" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=REPLACE_WITH_GENERATED_SEALED_TOKEN" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=REPLACE_WITH_GENERATED_SEALED_TOKEN" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&theme=dark&legend=top-left&sealed_token=a5jIWEJPfyRMdiaCQUvOzIECqreExVWCQxwklnZQJAQP83GwTugOWZExnhGLYX3NkhE3CuEcc5YbduHyTN-LEaYAAClbkoC0mq95C05gk5fb_D-y2QsWng" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=a5jIWEJPfyRMdiaCQUvOzIECqreExVWCQxwklnZQJAQP83GwTugOWZExnhGLYX3NkhE3CuEcc5YbduHyTN-LEaYAAClbkoC0mq95C05gk5fb_D-y2QsWng" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=a5jIWEJPfyRMdiaCQUvOzIECqreExVWCQxwklnZQJAQP83GwTugOWZExnhGLYX3NkhE3CuEcc5YbduHyTN-LEaYAAClbkoC0mq95C05gk5fb_D-y2QsWng" />
  </picture>
 </a>
-```
