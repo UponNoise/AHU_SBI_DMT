@@ -1,0 +1,684 @@
+{
+  "schema_version": 1,
+  "source": {
+    "url": "https://sbiahu.ahu.edu.cn/22094/list.htm",
+    "title": "安徽大学纽约石溪学院课程设置",
+    "version": "2022级版本",
+    "retrieved_at": "2026-08-10"
+  },
+  "courses": {
+    "GG17005": {
+      "name": "职业规划与创新创业",
+      "credits": "1",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "GG18002": {
+      "name": "国家安全教育",
+      "credits": "1",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "GG61014": {
+      "name": "思想道德与法治",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "GG61015": {
+      "name": "马克思主义基本原理",
+      "credits": "3",
+      "stony_brook_certification": "SBC(HUM)",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "GG61016": {
+      "name": "四史教育",
+      "credits": "1",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "GG61112": {
+      "name": "中国近现代史纲要",
+      "credits": "3",
+      "stony_brook_certification": "SBC(SBS+)",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "GG61115": {
+      "name": "毛泽东思想和中国特色社会主义理论体系概论",
+      "credits": "3",
+      "stony_brook_certification": "SBC(HUM)",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "GG64001": {
+      "name": "军事理论",
+      "credits": "2",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "GG64002": {
+      "name": "军事技能",
+      "credits": "2",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "SJ17007": {
+      "name": "创新创业实践",
+      "credits": "2",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "SJ40001": {
+      "name": "程序设计与算法综合训练",
+      "credits": "1.5",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "SJ40101": {
+      "name": "统计建模设计",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "SJ40102": {
+      "name": "数学实验设计",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "SL14001": {
+      "name": "毕业论文（设计、创作）",
+      "credits": "6",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "SX40001": {
+      "name": "毕业实习-系统硬件综合实训",
+      "credits": "2",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "SX40002": {
+      "name": "毕业实习",
+      "credits": "2",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "SX40003": {
+      "name": "毕业实习",
+      "credits": "2",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "TX41401": {
+      "name": "中文写作",
+      "credits": "3",
+      "stony_brook_certification": "SBC(HFA+/LANG)",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "TX42403": {
+      "name": "世界中世纪史",
+      "credits": "3",
+      "stony_brook_certification": "SBC(GLO/SBS)",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "TX43405": {
+      "name": "社会心理学导论",
+      "credits": "3",
+      "stony_brook_certification": "SBC(DIV/SBS+)",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "TX48402": {
+      "name": "大学艺术",
+      "credits": "3",
+      "stony_brook_certification": "SBC(ARTS)",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "通识课程",
+        "AMS": "通识课程"
+      }
+    },
+    "YJ40101": {
+      "name": "应用微积分I",
+      "credits": "3",
+      "stony_brook_certification": "AMS 151 Applied Calculus I (MAT 131)",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40102": {
+      "name": "应用微积分II",
+      "credits": "3",
+      "stony_brook_certification": "AMS 161 Applied Calculus II (MAT 132)",
+      "prerequisite": "AMS 151",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40103": {
+      "name": "应用微积分III",
+      "credits": "4",
+      "stony_brook_certification": "MAT 203 Calculus III with Applications (AMS 261)",
+      "prerequisite": "AMS 161",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40104": {
+      "name": "应用微积分IV",
+      "credits": "4",
+      "stony_brook_certification": "MAT 303 Calculus IV with Applications (AMS361)",
+      "prerequisite": "AMS161",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40105": {
+      "name": "应用线性代数",
+      "credits": "3",
+      "stony_brook_certification": "AMS 210 Applied Linear Algebra (MAT 211)",
+      "prerequisite": "AMS 151",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40106": {
+      "name": "高阶概率论",
+      "credits": "3",
+      "stony_brook_certification": "AMS 311 Probability Theory",
+      "prerequisite": "AMS301 / AMS310",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40107": {
+      "name": "应用代数学",
+      "credits": "3",
+      "stony_brook_certification": "MAT 312 Applied Algebra (AMS351)",
+      "prerequisite": "AMS210",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40108": {
+      "name": "高阶数理统计",
+      "credits": "3",
+      "stony_brook_certification": "AMS 412 Mathematical Statistics",
+      "prerequisite": "AMS311",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40109": {
+      "name": "数据分析",
+      "credits": "3",
+      "stony_brook_certification": "AMS 315 Data Analysis",
+      "prerequisite": "AMS 310",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40110": {
+      "name": "时间序列分析概论",
+      "credits": "3",
+      "stony_brook_certification": "AMS 316 Introduction to Time Series Analysis",
+      "prerequisite": "AMS311 / AMS315",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40111": {
+      "name": "有限数学结构",
+      "credits": "3",
+      "stony_brook_certification": "AMS 301 Finite Mathematical Structures",
+      "prerequisite": "AMS210",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40112": {
+      "name": "概率论与数理统计",
+      "credits": "3",
+      "stony_brook_certification": "AMS 310 Survey of Probability and Statistics",
+      "prerequisite": "AMS 161",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40201": {
+      "name": "程序设计基础",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40202": {
+      "name": "面向对象编程概论",
+      "credits": "4",
+      "stony_brook_certification": "CSE 114 Introduction to Object-Oriented Programming",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40203": {
+      "name": "数据结构",
+      "credits": "4",
+      "stony_brook_certification": "CSE 214 Data Structures",
+      "prerequisite": "CSE 114",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40204": {
+      "name": "高级语言程序设计",
+      "credits": "4",
+      "stony_brook_certification": "CSE 130 Introduction to Programming in C",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "YJ40205": {
+      "name": "信息技术基础",
+      "credits": "3",
+      "stony_brook_certification": "ISE 218 Fundamentals of Information Technology",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "YJ40206": {
+      "name": "数据库设计与实践",
+      "credits": "3",
+      "stony_brook_certification": "ISE 305 Database Design and Practice",
+      "prerequisite": "CSE 114",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "YJ40207": {
+      "name": "信息管理",
+      "credits": "3",
+      "stony_brook_certification": "ISE 320 Information Management",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "YJ40208": {
+      "name": "网络原理",
+      "credits": "3",
+      "stony_brook_certification": "ISE 316 Introduction to Networking",
+      "prerequisite": "AMS 310",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "YJ40209": {
+      "name": "人机交互",
+      "credits": "3",
+      "stony_brook_certification": "ISE 323 Human-Computer Interaction",
+      "prerequisite": "CSE 214",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "YJ40210": {
+      "name": "用户界面开发",
+      "credits": "3",
+      "stony_brook_certification": "ISE 333 User Interface Development",
+      "prerequisite": "CSE 214",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "YJ40211": {
+      "name": "信息系统中的法律、社会与道德问题",
+      "credits": "3",
+      "stony_brook_certification": "ISE 312 Legal, Social, and Ethical Issues in Information Systems",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程",
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40212": {
+      "name": "计算机安全基础",
+      "credits": "3",
+      "stony_brook_certification": "ISE 331 Fundamentals of Computer Security",
+      "prerequisite": "ISE 218",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "YJ40403": {
+      "name": "中级学术英语写作",
+      "credits": "3",
+      "stony_brook_certification": "WAE 190 Intermediate Writing Academic English",
+      "prerequisite": "WPE",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    },
+    "YJ40404": {
+      "name": "中高级学术英语写作",
+      "credits": "3",
+      "stony_brook_certification": "WAE 192 High Intermediate Writing Academic English",
+      "prerequisite": "WPE or WAE 190",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    },
+    "YJ40405": {
+      "name": "高级学术英语写作",
+      "credits": "3",
+      "stony_brook_certification": "WAE 194 Advanced Writing Academic English",
+      "prerequisite": "WPE or WAE 192",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    },
+    "YJ40406": {
+      "name": "学术英语写作工作坊",
+      "credits": "3",
+      "stony_brook_certification": "WRT 101 Introductory Writing Workshop",
+      "prerequisite": "WAE 194 Exit Test",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    },
+    "YJ40602": {
+      "name": "计量经济学",
+      "credits": "4",
+      "stony_brook_certification": "ECO 321 Econometrics",
+      "prerequisite": "AMS310 / ECO108",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "YJ40603": {
+      "name": "经济学概论",
+      "credits": "4",
+      "stony_brook_certification": "ECO 108 Introduction to Economics",
+      "prerequisite": "AMS151",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "ZH40101": {
+      "name": "统计预测与决策",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "ZH40102": {
+      "name": "实变函数",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "ZH40104": {
+      "name": "应用多元统计分析",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "ZH40105": {
+      "name": "应用随机过程",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "AMS": "专业课程"
+      }
+    },
+    "ZH40201": {
+      "name": "数字媒体技术原理",
+      "credits": "2",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZH40202": {
+      "name": "操作系统",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZH40204": {
+      "name": "计算机图形学",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZH40207": {
+      "name": "计算机组成原理与汇编语言程序设计",
+      "credits": "5.5",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZJ40202": {
+      "name": "数字逻辑",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZJ40205": {
+      "name": "离散数学",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZJ40311": {
+      "name": "大学物理 A（上）",
+      "credits": "3",
+      "stony_brook_certification": "PHY 131 Classical Physics I",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZJ40312": {
+      "name": "大学物理 A（下）",
+      "credits": "3",
+      "stony_brook_certification": "PHY 132 Classical Physics Ⅱ",
+      "prerequisite": "PHY 131",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZJ40313": {
+      "name": "大学物理实验 A（上）",
+      "credits": "1",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZJ40314": {
+      "name": "大学物理实验 A（下）",
+      "credits": "1",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "专业课程"
+      }
+    },
+    "ZJ40401": {
+      "name": "基础英语",
+      "credits": "4",
+      "stony_brook_certification": "",
+      "prerequisite": "",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    },
+    "ZJ40402": {
+      "name": "中级英语听说",
+      "credits": "1",
+      "stony_brook_certification": "",
+      "prerequisite": "WPE",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    },
+    "ZJ40403": {
+      "name": "中高级英语听说",
+      "credits": "1",
+      "stony_brook_certification": "",
+      "prerequisite": "WPE or ZJ40402",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    },
+    "ZJ40404": {
+      "name": "高级英语听说",
+      "credits": "1",
+      "stony_brook_certification": "",
+      "prerequisite": "WPE or ZJ40403",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    },
+    "ZX40401": {
+      "name": "批判性阅读与写作",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "WAE 194 or ZJ40404",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    },
+    "ZX40402": {
+      "name": "英语测试辅导",
+      "credits": "3",
+      "stony_brook_certification": "",
+      "prerequisite": "WAE 194 or ZJ40404",
+      "programs": {
+        "DMT": "英语课程",
+        "AMS": "英语课程"
+      }
+    }
+  }
+}

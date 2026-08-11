@@ -14,10 +14,30 @@
 
 ## 课表索引
 
-若新增课程目录，请同步更新：
+若新增课程或调整学期，请更新唯一数据源：
 
-- `curricula/DMT/` 和/或 `curricula/AMS/` 对应学期 Markdown
-- 根目录 `README.md` 课程索引
+- `data/curricula.json`：专业与学期映射
+- `data/course-overrides.json`：转学成绩要求、合并存档说明等人工补充字段
+
+随后生成所有专业索引、学期页面和课程 README：
+
+```bash
+python scripts/generate_catalog.py
+python scripts/generate_catalog.py --check
+```
+
+不要直接编辑自动生成的 `curricula/DMT/`、`curricula/AMS/` 或课程目录内的 `README.md`。
+课程分类中没有实际文件时不要添加 `.gitkeep`；空分类不会出现在 GitHub 页面上。
+
+学院课程字段快照位于 `data/official-courses-2022.json`。官网更新后可运行：
+
+```bash
+python scripts/sync_official_courses.py
+python scripts/generate_catalog.py
+```
+
+如果官网拒绝命令行请求，请先在浏览器中把课程设置页保存为 HTML，再运行
+`python scripts/sync_official_courses.py --input-html <保存的网页>`。
 
 ## 年级后缀
 
