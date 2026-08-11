@@ -1,6 +1,14 @@
 {
   "schema_version": 1,
   "courses": {
+    "ENG": {
+      "course_codes": [
+        "190",
+        "192",
+        "194",
+        "101"
+      ]
+    },
     "YJ40101-应用微积分I": {
       "transfer_requirements": {
         "DMT": "单科75+，且 AMS151/CSE114/ISE218 四制均绩 ≥3.0",

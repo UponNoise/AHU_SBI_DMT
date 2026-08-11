@@ -116,6 +116,7 @@ def major_readme(
     major: str,
     semesters: dict[str, list[str]],
     inventories: dict[str, dict[str, object]],
+    hidden_navigation_groups: set[str],
 ) -> str:
     lines = [
         f"# {MAJOR_NAMES[major]}培养方案索引",
@@ -128,6 +129,8 @@ def major_readme(
         "| --- | ---: | ---: |",
     ]
     for semester, slugs in semesters.items():
+        if semester in hidden_navigation_groups:
+            continue
         available = sum(bool(inventories[slug]["total"]) for slug in slugs)
         lines.append(f"| [{semester}]({markdown_path(semester + '.md')}) | {available} | {len(slugs)} |")
     lines.extend(
@@ -195,7 +198,11 @@ def course_readme(
         lines.extend(["", f"> 注意：{override['note']}"])
 
     lines.extend(["", "## 课程信息", "", "| 项目 | 内容 |", "| --- | --- |"])
-    lines.append(f"| 课程代码 | `{code}` |" if code else "| 课程代码 | — |")
+    course_codes = override.get("course_codes", [])
+    if course_codes:
+        lines.append(f"| 课程代码 | {'、'.join(course_codes)} |")
+    else:
+        lines.append(f"| 课程代码 | `{code}` |" if code else "| 课程代码 | — |")
     if official:
         lines.append(f"| 学分 | {official.get('credits') or '—'} |")
         lines.append(
@@ -248,7 +255,9 @@ def course_readme(
 
 
 def build_outputs() -> tuple[dict[Path, str], list[str]]:
-    curricula = load_json(ROOT / "data" / "curricula.json")["majors"]
+    curricula_data = load_json(ROOT / "data" / "curricula.json")
+    curricula = curricula_data["majors"]
+    hidden_navigation_groups = set(curricula_data.get("hidden_navigation_groups", []))
     official_data = load_json(ROOT / "data" / "official-courses-2022.json")
     overrides = load_json(ROOT / "data" / "course-overrides.json").get("courses", {})
     official_courses = official_data["courses"]
@@ -286,7 +295,7 @@ def build_outputs() -> tuple[dict[Path, str], list[str]]:
 
     for major, semesters in curricula.items():
         outputs[ROOT / "curricula" / major / "README.md"] = major_readme(
-            major, semesters, inventories
+            major, semesters, inventories, hidden_navigation_groups
         )
         for semester, slugs in semesters.items():
             outputs[ROOT / "curricula" / major / f"{semester}.md"] = semester_page(
