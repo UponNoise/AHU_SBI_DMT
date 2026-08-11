@@ -1,5 +1,5 @@
 ---
-import { coursePath, siteData } from '../lib/site-data';
+import { coursePath, majorName, siteData } from '../lib/site-data';
 
 const courses = [...siteData.courses].sort((a, b) => {
   if (a.hasResources !== b.hasResources) return a.hasResources ? -1 : 1;
@@ -51,7 +51,7 @@ const categories = siteData.materialCategories.filter((category) =>
         <span>专业</span>
         <select name="major" data-filter="major">
           <option value="">全部专业</option>
-          {majors.map(([key, major]) => <option value={key}>{key} · {major.name.split('（')[0]}</option>)}
+          {majors.map(([key]) => <option value={key}>{majorName(key)}</option>)}
         </select>
       </label>
       <label>
@@ -105,8 +105,10 @@ const categories = siteData.materialCategories.filter((category) =>
       const placementGroups = [...new Set(course.placements.map((item) => item.group))];
       const categoryNames = course.categories.map((category) => category.name);
       return (
-        <article
+        <a
           class="course-card"
+          href={coursePath(course.slug)}
+          aria-label={`查看${course.name}课程详情`}
           data-course-card
           data-search={course.searchText}
           data-majors={placementMajors.join('|')}
@@ -125,9 +127,9 @@ const categories = siteData.materialCategories.filter((category) =>
               <span class="stock-badge">等待补充</span>
             )}
           </div>
-          <h2><a href={coursePath(course.slug)}>{course.name}</a></h2>
+          <h2 title={course.name}>{course.name}</h2>
           <div class="course-card__tags">
-            {placementMajors.map((major) => <span>{major}</span>)}
+            {placementMajors.map((major) => <span>{majorName(major)}</span>)}
             {placementGroups.slice(0, 2).map((group) => <span>{group}</span>)}
           </div>
           <p class="course-card__categories">
@@ -135,10 +137,10 @@ const categories = siteData.materialCategories.filter((category) =>
               ? course.categories.map((item) => `${item.name} ${item.count}`).join(' · ')
               : '课程信息已建档，暂无资料分类'}
           </p>
-          <a class="course-card__action" href={coursePath(course.slug)}>
+          <span class="course-card__action">
             查看课程详情 <span aria-hidden="true">→</span>
-          </a>
-        </article>
+          </span>
+        </a>
       );
     })}
   </div>
@@ -203,7 +205,12 @@ const categories = siteData.materialCategories.filter((category) =>
       activeFilters.replaceChildren();
       const labels: Array<[keyof typeof controls, string]> = [
         ['q', queryInput.value ? `关键词：${queryInput.value}` : ''],
-        ['major', majorSelect.value ? `专业：${majorSelect.value}` : ''],
+        [
+          'major',
+          majorSelect.value
+            ? `专业：${majorSelect.selectedOptions[0]?.textContent ?? majorSelect.value}`
+            : '',
+        ],
         ['semester', semesterSelect.value ? `学期：${semesterSelect.value}` : ''],
         ['category', categorySelect.value ? `类型：${categorySelect.value}` : ''],
         [

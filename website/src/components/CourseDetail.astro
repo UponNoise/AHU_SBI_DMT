@@ -1,5 +1,5 @@
 ---
-import { siteData, sitePath } from '../lib/site-data';
+import { majorName, siteData, sitePath } from '../lib/site-data';
 
 interface Props {
   slug: string;
@@ -11,7 +11,7 @@ if (!course) throw new Error(`Unknown course slug: ${slug}`);
 
 const placementLabels = course.placements.map((placement) => ({
   ...placement,
-  label: `${placement.major} · ${placement.group}`,
+  label: `${majorName(placement.major)} · ${placement.group}`,
   href: sitePath(`curricula/${placement.major.toLowerCase()}/`),
 }));
 ---
@@ -73,7 +73,7 @@ const placementLabels = course.placements.map((placement) => ({
       <div class="requirement-grid">
         {Object.entries(course.transferRequirements).map(([major, requirement]) => (
           <div>
-            <span>{major} 转专业参考</span>
+            <span>{majorName(major)}转专业参考</span>
             <strong>{requirement}</strong>
           </div>
         ))}

@@ -71,3 +71,7 @@ export function sitePath(path = ''): string {
 export function coursePath(slug: string): string {
   return sitePath(`course/${slug}/`);
 }
+
+export function majorName(major: string): string {
+  return siteData.majors[major]?.name.replace(/（[^）]+）/g, '').trim() ?? major;
+}

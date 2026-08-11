@@ -44,8 +44,8 @@ export default defineConfig({
         {
           label: '按专业浏览',
           items: [
-            { label: '数字媒体技术 DMT', slug: 'curricula/dmt' },
-            { label: '应用统计学 AMS', slug: 'curricula/ams' },
+            { label: '数字媒体技术', slug: 'curricula/dmt' },
+            { label: '应用统计学', slug: 'curricula/ams' },
           ],
         },
         {

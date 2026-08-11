@@ -30,6 +30,14 @@
   }
 
   :root[data-theme='light'] {
+    --sl-color-white: #12304a;
+    --sl-color-gray-1: #273941;
+    --sl-color-gray-2: #485b65;
+    --sl-color-gray-3: #6b7c84;
+    --sl-color-gray-4: #91a0a7;
+    --sl-color-gray-5: #c7d1d7;
+    --sl-color-gray-6: #e9eef1;
+    --sl-color-black: #f7f8f5;
     --sl-color-bg: #f7f8f5;
     --sl-color-bg-nav: rgb(247 248 245 / 92%);
     --sl-color-bg-sidebar: #f2f5f2;
@@ -86,7 +94,32 @@
     backdrop-filter: blur(16px);
   }
 
+  .sidebar-content {
+    padding-inline-end: 0.65rem;
+  }
+
+  .sidebar-content a,
+  .sidebar-content summary {
+    color: var(--sl-color-gray-2);
+  }
+
+  .sidebar-content a {
+    border-radius: 0.48rem;
+    transition: color 140ms ease, background-color 140ms ease;
+  }
+
+  .sidebar-content a:hover {
+    color: var(--portal-ink);
+    background: color-mix(in srgb, var(--portal-teal) 8%, transparent);
+  }
+
+  .sidebar-content ul ul {
+    border-inline-start: 1px solid var(--portal-line);
+  }
+
   .sidebar-content a[aria-current='page'] {
+    color: var(--portal-ink);
+    background: color-mix(in srgb, var(--portal-teal) 16%, var(--portal-surface));
     font-weight: 700;
   }
 
@@ -595,6 +628,27 @@
     color: var(--portal-muted);
   }
 
+  /*
+   * Starlight adds vertical rhythm between prose siblings. These components
+   * are application UI, so their grid and toolbar children need an explicit
+   * reset to stay on the same baseline.
+   */
+  .sl-markdown-content :is(
+    .filter-grid,
+    .filter-toolbar,
+    .filter-toolbar__actions,
+    .result-summary,
+    .course-card-grid,
+    .major-path-grid,
+    .course-preview-grid,
+    .semester-course-grid,
+    .resource-category-grid,
+    .requirement-grid,
+    .stat-grid
+  ) > * {
+    margin-block-start: 0;
+  }
+
   .explorer-intro {
     display: flex;
     gap: 2rem;
@@ -634,7 +688,7 @@
     position: sticky;
     z-index: 5;
     top: calc(var(--sl-nav-height) + 0.65rem);
-    padding: 1rem;
+    padding: 1.1rem;
     border: 1px solid var(--portal-line);
     border-radius: var(--portal-radius-md);
     background: color-mix(in srgb, var(--portal-surface) 94%, transparent);
@@ -645,6 +699,8 @@
   .filter-search__control {
     display: flex;
     align-items: center;
+    min-height: 3rem;
+    margin-top: 0;
     border: 1px solid var(--portal-line);
     border-radius: 0.75rem;
     background: var(--portal-soft);
@@ -657,7 +713,7 @@
 
   .filter-search input {
     flex: 1;
-    min-height: 2.7rem;
+    min-height: 2.9rem;
     padding-inline: 0.8rem;
     outline: none;
   }
@@ -679,10 +735,22 @@
     margin-top: 0.75rem;
   }
 
+  .filter-grid > label {
+    display: flex;
+    min-width: 0;
+    margin: 0;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .filter-grid label > span {
+    margin-bottom: 0;
+  }
+
   .filter-grid select,
   .filter-toolbar select {
     width: 100%;
-    min-height: 2.45rem;
+    min-height: 2.75rem;
     padding: 0 0.65rem;
     border: 1px solid var(--portal-line);
     border-radius: 0.65rem;
@@ -700,7 +768,7 @@
     gap: 1rem;
     align-items: end;
     justify-content: space-between;
-    min-height: 2.45rem;
+    min-height: 2.75rem;
     margin-top: 0.75rem;
     padding-top: 0.75rem;
     border-top: 1px solid var(--portal-line);
@@ -710,6 +778,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem;
+  }
+
+  .active-filters:empty {
+    display: none;
   }
 
   .active-filters button {
@@ -727,6 +799,7 @@
     flex: 0 0 auto;
     gap: 0.6rem;
     align-items: end;
+    margin-left: auto;
   }
 
   .filter-toolbar__actions label {
@@ -746,7 +819,7 @@
 
   .filter-toolbar__actions > button,
   .empty-results button {
-    min-height: 2.45rem;
+    min-height: 2.75rem;
     padding: 0.45rem 0.7rem;
     border: 1px solid var(--portal-line);
     border-radius: 0.65rem;
@@ -776,18 +849,25 @@
   .course-card-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
     gap: 0.75rem;
+    align-items: stretch;
   }
 
   .course-card {
     display: flex;
+    box-sizing: border-box;
+    height: 100%;
     min-width: 0;
     min-height: 13rem;
+    margin: 0;
     flex-direction: column;
     padding: 1rem;
     border: 1px solid var(--portal-line);
     border-radius: var(--portal-radius-md);
+    color: var(--portal-muted);
     background: var(--portal-surface);
+    text-decoration: none;
     transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
   }
 
@@ -796,9 +876,15 @@
   }
 
   .course-card:hover {
+    color: var(--portal-muted);
     border-color: color-mix(in srgb, var(--portal-teal) 48%, var(--portal-line));
     box-shadow: 0 12px 25px rgb(18 48 74 / 8%);
     transform: translateY(-2px);
+  }
+
+  .course-card:focus-visible {
+    border-color: var(--portal-teal);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--portal-teal) 15%, transparent);
   }
 
   .course-card__topline {
@@ -834,14 +920,15 @@
   }
 
   .course-card h2 {
+    display: -webkit-box;
+    min-height: 2.8em;
     margin: 0.75rem 0 0;
+    overflow: hidden;
+    color: var(--portal-ink);
     font-size: 1.06rem;
     line-height: 1.4;
-  }
-
-  .course-card h2 a {
-    color: var(--portal-ink);
-    text-decoration: none;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .course-card__tags,
@@ -865,6 +952,7 @@
 
   .course-card__categories {
     display: -webkit-box;
+    min-height: 2.2em;
     margin: 0.7rem 0;
     overflow: hidden;
     color: var(--portal-muted);
@@ -1426,6 +1514,12 @@
     .filter-toolbar__actions select {
       flex: 1;
       width: 100%;
+    }
+
+    .course-card h2 {
+      display: block;
+      min-height: 0;
+      overflow: visible;
     }
 
     .explorer-intro__count {

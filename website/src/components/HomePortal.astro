@@ -1,5 +1,5 @@
 ---
-import { coursePath, siteData, sitePath } from '../lib/site-data';
+import { coursePath, majorName, siteData, sitePath } from '../lib/site-data';
 
 const availableRate = Math.round(
   (siteData.stats.coursesWithResources / siteData.stats.courses) * 100,
@@ -88,9 +88,9 @@ const visibleMajorGroups = Object.entries(siteData.majors).map(([key, value]) =>
       {visibleMajorGroups.map((major) => (
         <article class={`major-path major-path--${major.key.toLowerCase()}`}>
           <div class="major-path__header">
-            <span class="major-monogram">{major.key}</span>
+            <span class="major-monogram">{major.key === 'DMT' ? '数媒' : '应统'}</span>
             <div>
-              <h3>{major.name.replace(`（${major.key}）`, '')}</h3>
+              <h3>{majorName(major.key)}</h3>
               <p>{major.key === 'DMT' ? '技术、设计与信息系统' : '数学、统计与数据分析'}</p>
             </div>
           </div>
@@ -103,7 +103,7 @@ const visibleMajorGroups = Object.entries(siteData.majors).map(([key, value]) =>
             ))}
           </ul>
           <a href={sitePath(`curricula/${major.key.toLowerCase()}/`)}>
-            查看 {major.key} 完整课表 <span aria-hidden="true">→</span>
+            查看完整课表 <span aria-hidden="true">→</span>
           </a>
         </article>
       ))}
