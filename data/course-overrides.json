@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "courses": {
+    "YJ40101-应用微积分I": {
+      "transfer_requirements": {
+        "DMT": "单科75+，且 AMS151/CSE114/ISE218 四制均绩 ≥3.0",
+        "AMS": "单科68+，且 AMS151/AMS161/MAT203/AMS210 四制均绩 ≥2.8"
+      }
+    },
+    "YJ40102-应用微积分II": {
+      "transfer_requirements": {
+        "DMT": "68+",
+        "AMS": "单科68+，且四门微积分/线代组合均绩 ≥2.8"
+      }
+    },
+    "YJ40103-应用微积分III": {
+      "transfer_requirements": {
+        "DMT": "68+",
+        "AMS": "单科75+，且四门组合均绩 ≥2.8"
+      }
+    },
+    "YJ40105-应用线性代数": {
+      "transfer_requirements": {
+        "DMT": "68+",
+        "AMS": "单科75+，且四门组合均绩 ≥2.8"
+      }
+    },
+    "YJ40109-数据分析": {
+      "transfer_requirements": {
+        "DMT": "68+",
+        "AMS": "68+"
+      }
+    },
+    "YJ40112-概率论与数理统计": {
+      "transfer_requirements": {
+        "DMT": "68+",
+        "AMS": "68+"
+      }
+    },
+    "YJ40202-面向对象编程概论": {
+      "transfer_requirements": {
+        "DMT": "单科75+，且 AMS151/CSE114/ISE218 均绩 ≥3.0",
+        "AMS": "68+"
+      }
+    },
+    "YJ40203-数据结构": {
+      "transfer_requirements": {
+        "DMT": "68+",
+        "AMS": "68+"
+      }
+    },
+    "YJ40205-信息技术基础": {
+      "transfer_requirements": {
+        "DMT": "单科75+，且 AMS151/CSE114/ISE218 均绩 ≥3.0"
+      }
+    },
+    "ZJ40311-大学物理A": {
+      "note": "学院 2022 级课程设置将大学物理 A 分为 ZJ40311（上）和 ZJ40312（下）；本仓库的历史资料目前合并存放。"
+    },
+    "ZJ40313-大学物理实验A": {
+      "note": "学院 2022 级课程设置将大学物理实验 A 分为 ZJ40313（上）和 ZJ40314（下）；本仓库的历史资料目前合并存放。"
+    }
+  }
+}

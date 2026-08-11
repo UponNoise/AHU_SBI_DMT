@@ -1,45 +1,156 @@
-# AHU_SBI_DMT
+# AHU 石溪学院课程资料库
 
-AHU 石溪学院数字媒体技术方向课程资料归档。内容以课件、习题、实验材料、复习资料为主，仅供个人学习和资料备份参考。
+安徽大学石溪学院课程资料归档，覆盖**数字媒体技术（DMT）**与**应用统计学（AMS）**。
+物理上按「课程」唯一存放；逻辑上用专业课表索引浏览。同一门课只保存一份资料。
+
+资料仅供个人学习、复习和备份。课程安排与考核以学院当学期通知为准。
+
+## 快速导航
+
+- [DMT 课表索引](curricula/DMT/README.md)
+- [AMS 课表索引](curricula/AMS/README.md)
+- [转学学分兑换说明](docs/transfer/README.md)
+- [收录内容](docs/收录内容.md)
+- [贡献指南](CONTRIBUTING.md)
+
+## 库结构
+
+```text
+README.md
+CONTRIBUTING.md
+docs/                  # 转学要求、收录说明等
+data/                  # 学期映射、官网课程快照与人工补充字段
+scripts/               # 自动生成课程索引与课程说明
+curricula/
+  DMT/                 # 数媒按学期课表（仅 Markdown 链接）
+  AMS/                 # 应统按学期课表（仅 Markdown 链接）
+课程资料/
+  <课号-课程名>/
+    README.md
+    <有实际文件的资料分类>/
+```
+
+设计参考 [REKCARC-TSC-UHT](https://github.com/PKUanonym/REKCARC-TSC-UHT) 的课内分类，
+但顶层不用「学期优先」（双专业共享课会重复），改为「课程唯一 + 课表索引」。
+
+## 课程索引
+
+<!-- catalog:start -->
+> 共 59 门课程；37 门已有资料，22 门等待补充。
+> 可按 `t` 使用 GitHub 文件查找，或从上方专业课表按学期进入。
+
+### 已有资料（37）
+
+- [ENG](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ENG) — **14 个文件** · 通用资料 14
+- [GG61015 · 马克思主义基本原理](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/GG61015-%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86) — **5 个文件** · 复习资料 5
+- [GG61115 · 毛泽东思想和中国特色社会主义理论体系概论](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/GG61115-%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3%E5%92%8C%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E7%90%86%E8%AE%BA%E4%BD%93%E7%B3%BB%E6%A6%82%E8%AE%BA) — **4 个文件** · 通用资料 2 · Practice 2
+- [GG61116 · 习近平新时代中国特色社会主义思想概论（上）](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/GG61116-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%96%B0%E6%97%B6%E4%BB%A3%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E6%80%9D%E6%83%B3%E6%A6%82%E8%AE%BA%EF%BC%88%E4%B8%8A%EF%BC%89) — **21 个文件** · 通用资料 18 · Practice 1 · 复习资料 2
+- [GG61117 · 习近平新时代中国特色社会主义思想概论（下）](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/GG61117-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%96%B0%E6%97%B6%E4%BB%A3%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E6%80%9D%E6%83%B3%E6%A6%82%E8%AE%BA%EF%BC%88%E4%B8%8B%EF%BC%89) — **7 个文件** · 通用资料 2 · 作业 5
+- [GG64001 · 军事理论](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/GG64001-%E5%86%9B%E4%BA%8B%E7%90%86%E8%AE%BA) — **8 个文件** · 通用资料 5 · Practice 2 · 复习资料 1
+- [Python](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/Python) — **28 个文件** · 通用资料 10 · 作业 18
+- [SJ40001 · 程序设计与算法综合训练](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/SJ40001-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%AE%97%E6%B3%95%E7%BB%BC%E5%90%88%E8%AE%AD%E7%BB%83) — **19 个文件** · 通用资料 8 · 试卷 2 · Practice 9
+- [SX40001 · 毕业实习-系统硬件综合实训](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/SX40001-%E6%AF%95%E4%B8%9A%E5%AE%9E%E4%B9%A0-%E7%B3%BB%E7%BB%9F%E7%A1%AC%E4%BB%B6%E7%BB%BC%E5%90%88%E5%AE%9E%E8%AE%AD) — **170 个文件** · 通用资料 34 · 作业 136
+- [TX43405 · 社会心理学导论](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/TX43405-%E7%A4%BE%E4%BC%9A%E5%BF%83%E7%90%86%E5%AD%A6%E5%AF%BC%E8%AE%BA) — **3 个文件** · 通用资料 3
+- [TX48402 · 大学艺术](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/TX48402-%E5%A4%A7%E5%AD%A6%E8%89%BA%E6%9C%AF) — **5 个文件** · 通用资料 5
+- [YJ40101 · 应用微积分I](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40101-%E5%BA%94%E7%94%A8%E5%BE%AE%E7%A7%AF%E5%88%86I) — **8 个文件** · 通用资料 1 · 试卷 5 · Practice 2
+- [YJ40102 · 应用微积分II](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40102-%E5%BA%94%E7%94%A8%E5%BE%AE%E7%A7%AF%E5%88%86II) — **6 个文件** · 试卷 4 · Practice 2
+- [YJ40103 · 应用微积分III](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40103-%E5%BA%94%E7%94%A8%E5%BE%AE%E7%A7%AF%E5%88%86III) — **9 个文件** · 试卷 8 · Practice 1
+- [YJ40105 · 应用线性代数](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40105-%E5%BA%94%E7%94%A8%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0) — **30 个文件** · 通用资料 29 · Practice 1
+- [YJ40109 · 数据分析](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40109-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90) — **987 个文件** · 通用资料 41 · 作业 928 · 试卷 11 · 复习资料 7
+- [YJ40112 · 概率论与数理统计](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40112-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1) — **66 个文件** · 通用资料 38 · 试卷 13 · Practice 11 · 复习资料 4
+- [YJ40202 · 面向对象编程概论](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40202-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E6%A6%82%E8%AE%BA) — **31 个文件** · 通用资料 17 · 作业 5 · 试卷 3 · Practice 6
+- [YJ40203 · 数据结构](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40203-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84) — **52 个文件** · 通用资料 13 · 作业 10 · Practice 29
+- [YJ40204 · 高级语言程序设计](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40204-%E9%AB%98%E7%BA%A7%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1) — **35 个文件** · 通用资料 27 · 作业 7 · 试卷 1
+- [YJ40205 · 信息技术基础](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40205-%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80) — **45 个文件** · 通用资料 17 · Quiz 3 · 作业 13 · Practice 9 · 复习资料 3
+- [YJ40206 · 数据库设计与实践](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40206-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5) — **69 个文件** · 通用资料 47 · 作业 19 · 复习资料 3
+- [YJ40207 · 信息管理](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40207-%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86) — **25 个文件** · 通用资料 11 · 作业 5 · 试卷 8 · 复习资料 1
+- [YJ40208 · 网络原理](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40208-%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86) — **27 个文件** · 通用资料 9 · 作业 2 · Practice 7 · 复习资料 9
+- [YJ40209 · 人机交互](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40209-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92) — **47 个文件** · 通用资料 38 · 作业 7 · 复习资料 2
+- [YJ40210 · 用户界面开发](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40210-%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91) — **52 个文件** · 通用资料 14 · Quiz 9 · 作业 5 · 试卷 1 · Practice 21 · 复习资料 2
+- [YJ40211 · 信息系统中的法律、社会与道德问题](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40211-%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E6%B3%95%E5%BE%8B%E3%80%81%E7%A4%BE%E4%BC%9A%E4%B8%8E%E9%81%93%E5%BE%B7%E9%97%AE%E9%A2%98) — **32 个文件** · 通用资料 27 · 作业 4 · 试卷 1
+- [YJ40212 · 计算机安全基础](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40212-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80) — **196 个文件** · 通用资料 34 · Quiz 12 · 作业 139 · Practice 8 · 复习资料 3
+- [ZH40201 · 数字媒体技术原理](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZH40201-%E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86) — **4 个文件** · Practice 1 · 复习资料 3
+- [ZH40202 · 操作系统](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZH40202-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F) — **23 个文件** · 通用资料 18 · Practice 5
+- [ZH40204 · 计算机图形学](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZH40204-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6) — **26 个文件** · 通用资料 9 · 作业 14 · 复习资料 3
+- [ZH40207 · 计算机组成原理与汇编语言程序设计](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZH40207-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E4%B8%8E%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1) — **26 个文件** · 通用资料 14 · 作业 6 · Practice 6
+- [ZJ40202 · 数字逻辑](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZJ40202-%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91) — **4 个文件** · 通用资料 1 · 作业 2 · Practice 1
+- [ZJ40205 · 离散数学](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZJ40205-%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6) — **33 个文件** · 通用资料 19 · Practice 14
+- [ZJ40311 · 大学物理A](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZJ40311-%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86A) — **41 个文件** · 通用资料 18 · 作业 1 · 试卷 4 · Practice 16 · 复习资料 2
+- [ZJ40313 · 大学物理实验A](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZJ40313-%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8CA) — **11 个文件** · 作业 11
+- [常微分方程](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B) — **1 个文件** · 通用资料 1
+
+<details>
+<summary>暂无资料（22）</summary>
+
+- [GG61112 · 中国近现代史纲要](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/GG61112-%E4%B8%AD%E5%9B%BD%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81)
+- [SJ40101 · 统计建模设计](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/SJ40101-%E7%BB%9F%E8%AE%A1%E5%BB%BA%E6%A8%A1%E8%AE%BE%E8%AE%A1)
+- [SJ40102 · 数学实验设计](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/SJ40102-%E6%95%B0%E5%AD%A6%E5%AE%9E%E9%AA%8C%E8%AE%BE%E8%AE%A1)
+- [TX41401 · 中文写作](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/TX41401-%E4%B8%AD%E6%96%87%E5%86%99%E4%BD%9C)
+- [TX42403 · 世界中世纪史](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/TX42403-%E4%B8%96%E7%95%8C%E4%B8%AD%E4%B8%96%E7%BA%AA%E5%8F%B2)
+- [YJ40104 · 应用微积分IV](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40104-%E5%BA%94%E7%94%A8%E5%BE%AE%E7%A7%AF%E5%88%86IV)
+- [YJ40106 · 高阶概率论](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40106-%E9%AB%98%E9%98%B6%E6%A6%82%E7%8E%87%E8%AE%BA)
+- [YJ40107 · 应用代数学](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40107-%E5%BA%94%E7%94%A8%E4%BB%A3%E6%95%B0%E5%AD%A6)
+- [YJ40108 · 高阶数理统计](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40108-%E9%AB%98%E9%98%B6%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1)
+- [YJ40110 · 时间序列分析概论](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40110-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E6%9E%90%E6%A6%82%E8%AE%BA)
+- [YJ40111 · 有限数学结构](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40111-%E6%9C%89%E9%99%90%E6%95%B0%E5%AD%A6%E7%BB%93%E6%9E%84)
+- [YJ40201 · 程序设计基础](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40201-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80)
+- [YJ40403 · 中级学术英语写作](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40403-%E4%B8%AD%E7%BA%A7%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C)
+- [YJ40404 · 中高级学术英语写作](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40404-%E4%B8%AD%E9%AB%98%E7%BA%A7%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C)
+- [YJ40405 · 高级学术英语写作](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40405-%E9%AB%98%E7%BA%A7%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C)
+- [YJ40406 · 学术英语写作工作坊](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40406-%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E5%B7%A5%E4%BD%9C%E5%9D%8A)
+- [YJ40602 · 计量经济学](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40602-%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6)
+- [YJ40603 · 经济学概论](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/YJ40603-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E6%A6%82%E8%AE%BA)
+- [ZH40101 · 统计预测与决策](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZH40101-%E7%BB%9F%E8%AE%A1%E9%A2%84%E6%B5%8B%E4%B8%8E%E5%86%B3%E7%AD%96)
+- [ZH40102 · 实变函数](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZH40102-%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0)
+- [ZH40104 · 应用多元统计分析](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZH40104-%E5%BA%94%E7%94%A8%E5%A4%9A%E5%85%83%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90)
+- [ZH40105 · 应用随机过程](%E8%AF%BE%E7%A8%8B%E8%B5%84%E6%96%99/ZH40105-%E5%BA%94%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B)
+
+</details>
+<!-- catalog:end -->
+
+## 资料类型规范
+
+| 目录 | 放置内容 | 年级后缀 |
+| --- | --- | --- |
+| `通用资料` | 课件、教材、教学大纲、软件说明、跨届通用参考 | 不添加 |
+| `Quiz` | Quiz 题目、答案和解析 | 新资料需要 |
+| `作业` | 作业、实验、课程项目、报告 | 新资料需要 |
+| `试卷` | 期中、期末、模拟卷及答案 | 新资料需要 |
+| `Practice` | 练习、题库、思考题、例题 | 新资料需要 |
+| `复习资料` | 知识点、笔记、总结、复习提纲 | 新资料需要 |
+
+新增非通用资料文件名使用 `__20XX级` 标记提供者入学年级；来源不明用 `__来源届待确认`。
+
+## 面向整理脚本 / AI 的约束
+
+```yaml
+repository_policy:
+  schema_version: 2
+  canonical_course_root: "课程资料"
+  canonical_path: "课程资料/{课号-课程名}/{资料类型}/{原始相对路径}"
+  curricula_indexes:
+    - "curricula/DMT"
+    - "curricula/AMS"
+  physical_partitions:
+    major: forbidden
+    semester: forbidden
+    teacher: forbidden
+    cohort_directory: forbidden
+  allowed_material_types:
+    - "通用资料"
+    - "Quiz"
+    - "作业"
+    - "试卷"
+    - "Practice"
+    - "复习资料"
+  duplication:
+    duplicate_cross_major_course_files: forbidden
+  privacy:
+    action: "exclude"
+    rename_to_hide_identity: forbidden
+```
 
 ## 免责声明
 
-该文档仅限个人学习交流，为节约电脑存储空间上传，绝非提供参考或帮助广大同学抄袭作业或恶意分享本校教案等。
-若被用于其他途径与本人无关不要搞我TAT
-
----
-
-需要什么课的资料可以问（大概率我也找不到就是了，可以问问已经在美国的大佬——email: jiale.zheng@stonybrook [DOT] edu）
-有大手子来负责也许能做SBIAHU的仓库？
-
-## 目录结构
-
-| 学期 / 分类 | 已归档课程 |
-| --- | --- |
-| 大一上 | 军事理论、应用微积分I、应用微积分II、高级语言程序设计 |
-| 大一下 | 应用微积分III、应用线性代数、数字逻辑、面向对象编程概论 |
-| 大二上 | 习思想上、大学艺术、数据结构、概率论与数理统计、毛概、离散数学、马原 |
-| 大二下 | 信息技术基础、数字媒体技术原理、数据库设计与实践、程序设计与算法综合训练、计算机组成原理与汇编语言程序设计 |
-| 大三上 | 习概下、信息管理、操作系统、数据分析、社会心理学、网络原理 |
-| 大三下 | GUI开发、人机交互、信息系统中的法律、社会与道德问题、毕业实习-系统硬件综合实训、计算机图形学、计算机安全基础 |
-| 大物 | 作业和答案、期末 |
-| 物理实验 | 实验材料 |
-| 选修课 | ENG、Python |
-
-## 使用说明
-
-- 资料按学期和课程归档，优先查看对应课程文件夹。
-- 可能存在旧版本、缺页、命名不统一或个人整理痕迹，使用前自行核对课程要求。
-- 不保证覆盖所有课程，也不保证内容与当前教学安排一致。
-- 不接受将本仓库内容用于售卖、代写、抄袭、批量搬运或冒充官方资料。
-
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=UponNoise%2FAHU_SBI_DMT&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&theme=dark&legend=top-left&sealed_token=p9G2nCa5-PS6mDejwlotFdrhVuCENgU3OKcewi3hrhzqM6CfPIZYqENhRJekAQUi9VHZglbJWI1ALs1107sAwsun9aXE0BdqqMeHT2rSqlc6oeQ69-CqfM6-h18L52Ig4hkCnN6wCRPD-idgJgpTj6vp-8SE7dXvEfUdbiNxABSa46IJN-cfRViBp3hX" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=p9G2nCa5-PS6mDejwlotFdrhVuCENgU3OKcewi3hrhzqM6CfPIZYqENhRJekAQUi9VHZglbJWI1ALs1107sAwsun9aXE0BdqqMeHT2rSqlc6oeQ69-CqfM6-h18L52Ig4hkCnN6wCRPD-idgJgpTj6vp-8SE7dXvEfUdbiNxABSa46IJN-cfRViBp3hX" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=UponNoise/AHU_SBI_DMT&type=date&legend=top-left&sealed_token=p9G2nCa5-PS6mDejwlotFdrhVuCENgU3OKcewi3hrhzqM6CfPIZYqENhRJekAQUi9VHZglbJWI1ALs1107sAwsun9aXE0BdqqMeHT2rSqlc6oeQ69-CqfM6-h18L52Ig4hkCnN6wCRPD-idgJgpTj6vp-8SE7dXvEfUdbiNxABSa46IJN-cfRViBp3hX" />
- </picture>
-</a>
+本仓库不是学院官方资料库，不保证内容完整或适用于当前教学安排。
+禁止用于售卖、代写、抄袭、批量搬运或冒充官方资料。
