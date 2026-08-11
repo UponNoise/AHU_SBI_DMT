@@ -5,6 +5,8 @@
 
 资料仅供个人学习、复习和备份。课程安排与考核以学院当学期通知为准。
 
+🌐 **[打开课程资料索引网站](https://uponnoise.github.io/AHU_SBI_DMT/)** — 支持课程名、课程代码、专业、学期和资料类型筛选。
+
 ## 快速导航
 
 - [DMT 课表索引](curricula/DMT/README.md)
