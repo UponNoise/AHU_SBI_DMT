@@ -5,9 +5,9 @@
     --sl-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     --sl-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-    --sl-color-accent-low: #d9ecf1;
-    --sl-color-accent: #087b83;
-    --sl-color-accent-high: #12304a;
+    --sl-color-accent-low: #dce9f7;
+    --sl-color-accent: #1e3a5f;
+    --sl-color-accent-high: #0f172a;
     --sl-color-white: #f9fbfc;
     --sl-color-gray-1: #e9eef1;
     --sl-color-gray-2: #c7d1d7;
@@ -16,50 +16,60 @@
     --sl-color-gray-5: #273941;
     --sl-color-gray-6: #17272e;
     --sl-color-black: #0d1b21;
-    --portal-ink: #12304a;
-    --portal-muted: #5d6d75;
+    --portal-ink: #0f172a;
+    --portal-muted: #526176;
     --portal-surface: #ffffff;
-    --portal-soft: #f1f5f3;
-    --portal-line: #dce5e6;
-    --portal-teal: #087b83;
-    --portal-teal-dark: #075f67;
-    --portal-gold: #da8c2f;
-    --portal-shadow: 0 18px 50px rgb(18 48 74 / 10%);
-    --portal-radius-lg: 1.5rem;
-    --portal-radius-md: 1rem;
+    --portal-soft: #eef3f8;
+    --portal-line: #d3deea;
+    --portal-primary: #1e3a5f;
+    --portal-primary-hover: #172d4a;
+    --portal-teal: #0f766e;
+    --portal-teal-dark: #115e59;
+    --portal-gold: #a16207;
+    --portal-shadow-sm: 0 1px 2px rgb(15 23 42 / 6%);
+    --portal-shadow-md: 0 8px 24px rgb(30 58 95 / 9%);
+    --portal-shadow-lg: 0 18px 48px rgb(30 58 95 / 12%);
+    --portal-shadow: var(--portal-shadow-lg);
+    --portal-radius-lg: 1rem;
+    --portal-radius-md: 0.75rem;
   }
 
   :root[data-theme='light'] {
-    --sl-color-white: #12304a;
-    --sl-color-gray-1: #273941;
-    --sl-color-gray-2: #485b65;
-    --sl-color-gray-3: #6b7c84;
-    --sl-color-gray-4: #91a0a7;
-    --sl-color-gray-5: #c7d1d7;
-    --sl-color-gray-6: #e9eef1;
-    --sl-color-black: #f7f8f5;
-    --sl-color-bg: #f7f8f5;
-    --sl-color-bg-nav: rgb(247 248 245 / 92%);
-    --sl-color-bg-sidebar: #f2f5f2;
-    --sl-color-hairline: #dce5e6;
-    --sl-color-hairline-light: #e7edec;
-    --sl-color-text: #273941;
-    --sl-color-text-accent: #087b83;
+    --sl-color-white: #0f172a;
+    --sl-color-gray-1: #1e293b;
+    --sl-color-gray-2: #435269;
+    --sl-color-gray-3: #68788e;
+    --sl-color-gray-4: #95a3b4;
+    --sl-color-gray-5: #cbd5e1;
+    --sl-color-gray-6: #e9eef5;
+    --sl-color-black: #f8fafc;
+    --sl-color-bg: #f8fafc;
+    --sl-color-bg-nav: rgb(248 250 252 / 92%);
+    --sl-color-bg-sidebar: #f3f6fa;
+    --sl-color-hairline: #d3deea;
+    --sl-color-hairline-light: #e4eaf1;
+    --sl-color-text: #334155;
+    --sl-color-text-accent: #1e3a5f;
   }
 
   :root[data-theme='dark'] {
-    --sl-color-accent-low: #163d42;
-    --sl-color-accent: #7ed2d2;
-    --sl-color-accent-high: #d7f3f1;
-    --portal-ink: #edf6f7;
-    --portal-muted: #a9bac0;
-    --portal-surface: #14262d;
-    --portal-soft: #1b3037;
-    --portal-line: #31464e;
-    --portal-teal: #7ed2d2;
-    --portal-teal-dark: #b0e4e2;
-    --portal-gold: #f3b661;
-    --portal-shadow: 0 18px 50px rgb(0 0 0 / 25%);
+    --sl-color-accent-low: #18334f;
+    --sl-color-accent: #7dd3fc;
+    --sl-color-accent-high: #e0f2fe;
+    --portal-ink: #f8fafc;
+    --portal-muted: #b8c4d3;
+    --portal-surface: #111c2d;
+    --portal-soft: #172438;
+    --portal-line: #334155;
+    --portal-primary: #2f6faa;
+    --portal-primary-hover: #397fbd;
+    --portal-teal: #5eead4;
+    --portal-teal-dark: #99f6e4;
+    --portal-gold: #fbbf24;
+    --portal-shadow-sm: 0 1px 2px rgb(0 0 0 / 22%);
+    --portal-shadow-md: 0 8px 24px rgb(0 0 0 / 24%);
+    --portal-shadow-lg: 0 18px 48px rgb(0 0 0 / 30%);
+    --portal-shadow: var(--portal-shadow-lg);
   }
 
   html {
@@ -68,19 +78,25 @@
 
   body {
     background:
-      radial-gradient(circle at 12% 0%, rgb(8 123 131 / 6%), transparent 24rem),
+      radial-gradient(circle at 10% 0%, color-mix(in srgb, var(--portal-primary) 8%, transparent), transparent 28rem),
+      radial-gradient(circle at 92% 18%, color-mix(in srgb, var(--portal-teal) 5%, transparent), transparent 24rem),
       var(--sl-color-bg);
     font-feature-settings: "kern", "liga";
   }
 
   ::selection {
     color: #fff;
-    background: #087b83;
+    background: var(--portal-primary);
   }
 
   :focus-visible {
-    outline: 3px solid color-mix(in srgb, var(--portal-teal) 65%, white);
+    outline: 3px solid color-mix(in srgb, var(--portal-primary) 72%, white);
     outline-offset: 3px;
+  }
+
+  :is(a, button, select, summary) {
+    cursor: pointer;
+    touch-action: manipulation;
   }
 
   .site-title {
@@ -104,13 +120,14 @@
   }
 
   .sidebar-content a {
-    border-radius: 0.48rem;
+    min-height: 2.75rem;
+    border-radius: 0.55rem;
     transition: color 140ms ease, background-color 140ms ease;
   }
 
   .sidebar-content a:hover {
     color: var(--portal-ink);
-    background: color-mix(in srgb, var(--portal-teal) 8%, transparent);
+    background: color-mix(in srgb, var(--portal-primary) 8%, transparent);
   }
 
   .sidebar-content ul ul {
@@ -119,7 +136,7 @@
 
   .sidebar-content a[aria-current='page'] {
     color: var(--portal-ink);
-    background: color-mix(in srgb, var(--portal-teal) 16%, var(--portal-surface));
+    background: color-mix(in srgb, var(--portal-primary) 13%, var(--portal-surface));
     font-weight: 700;
   }
 
@@ -137,7 +154,7 @@
   .eyebrow {
     margin: 0 0 0.55rem;
     color: var(--portal-teal);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.16em;
     line-height: 1.3;
@@ -147,7 +164,7 @@
 
 @layer components {
   .home-portal {
-    width: min(100%, 74rem);
+    width: min(100%, 76rem);
     margin-inline: auto;
     color: var(--portal-muted);
   }
@@ -158,32 +175,43 @@
     grid-template-columns: minmax(0, 1.45fr) minmax(17rem, 0.75fr);
     gap: clamp(2rem, 6vw, 5rem);
     align-items: center;
-    min-height: 36rem;
-    padding: clamp(3rem, 7vw, 6.5rem) 0 clamp(3rem, 6vw, 5.5rem);
+    min-height: 33rem;
+    margin-top: 1rem;
+    padding: clamp(3rem, 7vw, 5.5rem) clamp(1.5rem, 5vw, 4.5rem);
+    overflow: hidden;
+    border: 1px solid var(--portal-line);
+    border-radius: 1.25rem;
+    background:
+      linear-gradient(115deg, color-mix(in srgb, var(--portal-surface) 94%, transparent), color-mix(in srgb, var(--portal-soft) 88%, transparent));
+    box-shadow: var(--portal-shadow-sm);
   }
 
   .portal-hero::before {
     position: absolute;
-    z-index: -1;
-    inset: 8% -8% auto auto;
-    width: 23rem;
-    height: 23rem;
-    border: 1px solid color-mix(in srgb, var(--portal-teal) 22%, transparent);
-    border-radius: 50%;
-    box-shadow:
-      0 0 0 3.8rem color-mix(in srgb, var(--portal-teal) 4%, transparent),
-      0 0 0 7.5rem color-mix(in srgb, var(--portal-gold) 3%, transparent);
+    z-index: 0;
+    inset: 0;
+    background-image:
+      linear-gradient(color-mix(in srgb, var(--portal-primary) 7%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in srgb, var(--portal-primary) 7%, transparent) 1px, transparent 1px);
+    background-size: 2rem 2rem;
+    mask-image: linear-gradient(90deg, transparent 30%, black 100%);
+    opacity: 0.55;
     content: '';
+  }
+
+  .portal-hero > * {
+    position: relative;
+    z-index: 1;
   }
 
   .portal-hero h1 {
     max-width: 12ch;
     margin: 0;
     color: var(--portal-ink);
-    font-size: clamp(2.65rem, 6vw, 5rem);
+    font-size: clamp(2.65rem, 5.6vw, 4.7rem);
     font-weight: 850;
-    letter-spacing: -0.065em;
-    line-height: 1.02;
+    letter-spacing: -0.052em;
+    line-height: 1.05;
   }
 
   .portal-hero h1 span {
@@ -194,7 +222,7 @@
     max-width: 38rem;
     margin: 1.4rem 0 0;
     font-size: clamp(1rem, 1.7vw, 1.2rem);
-    line-height: 1.8;
+    line-height: 1.75;
   }
 
   .hero-search {
@@ -217,14 +245,14 @@
     gap: 0.5rem;
     padding: 0.42rem;
     border: 1px solid var(--portal-line);
-    border-radius: 1rem;
+    border-radius: 0.8rem;
     background: var(--portal-surface);
-    box-shadow: 0 12px 34px rgb(18 48 74 / 9%);
+    box-shadow: var(--portal-shadow-md);
   }
 
   .hero-search__control:focus-within {
-    border-color: var(--portal-teal);
-    box-shadow: 0 0 0 4px color-mix(in srgb, var(--portal-teal) 15%, transparent);
+    border-color: var(--portal-primary);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--portal-primary) 15%, transparent);
   }
 
   .hero-search input,
@@ -255,7 +283,7 @@
     border: 0;
     border-radius: 0.72rem;
     color: #fff;
-    background: var(--portal-teal-dark);
+    background: var(--portal-primary);
     font-weight: 750;
     text-decoration: none;
     cursor: pointer;
@@ -264,7 +292,7 @@
   .hero-search button:hover,
   .primary-action:hover {
     color: #fff;
-    background: color-mix(in srgb, var(--portal-teal-dark) 86%, black);
+    background: var(--portal-primary-hover);
   }
 
   .hero-search > p {
@@ -290,11 +318,13 @@
     background: color-mix(in srgb, var(--portal-surface) 75%, transparent);
     font-weight: 700;
     text-decoration: none;
+    transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease;
   }
 
   .secondary-action:hover {
-    border-color: var(--portal-teal);
-    color: var(--portal-teal-dark);
+    border-color: var(--portal-primary);
+    color: var(--portal-primary);
+    background: var(--portal-surface);
   }
 
   .coverage-card {
@@ -302,9 +332,8 @@
     padding: 1.5rem;
     border: 1px solid color-mix(in srgb, var(--portal-line) 88%, transparent);
     border-radius: var(--portal-radius-lg);
-    background:
-      linear-gradient(145deg, color-mix(in srgb, var(--portal-surface) 92%, transparent), var(--portal-soft));
-    box-shadow: var(--portal-shadow);
+    background: color-mix(in srgb, var(--portal-surface) 96%, var(--portal-soft));
+    box-shadow: var(--portal-shadow-md);
   }
 
   .coverage-card::after {
@@ -332,6 +361,7 @@
 
   .coverage-card__topline strong {
     font-size: 2.2rem;
+    font-variant-numeric: tabular-nums;
     letter-spacing: -0.06em;
   }
 
@@ -366,7 +396,7 @@
 
   .stat-grid dt {
     color: var(--portal-muted);
-    font-size: 0.73rem;
+    font-size: 0.75rem;
   }
 
   .stat-grid dd {
@@ -374,6 +404,7 @@
     color: var(--portal-ink);
     font-size: 1.55rem;
     font-weight: 800;
+    font-variant-numeric: tabular-nums;
   }
 
   .coverage-card > p {
@@ -383,7 +414,7 @@
   }
 
   .portal-section {
-    padding: clamp(3.5rem, 7vw, 6rem) 0;
+    padding: clamp(3.25rem, 6vw, 5rem) 0;
     border-top: 1px solid var(--portal-line);
   }
 
@@ -401,7 +432,7 @@
   .curriculum-summary h2 {
     margin: 0;
     color: var(--portal-ink);
-    font-size: clamp(1.8rem, 3vw, 2.55rem);
+    font-size: clamp(1.8rem, 3vw, 2.35rem);
     font-weight: 800;
     letter-spacing: -0.045em;
     line-height: 1.15;
@@ -414,6 +445,9 @@
   }
 
   .section-heading--inline > a {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
     color: var(--portal-teal-dark);
     font-weight: 750;
     text-decoration: none;
@@ -432,7 +466,14 @@
     border: 1px solid var(--portal-line);
     border-radius: var(--portal-radius-lg);
     background: var(--portal-surface);
-    box-shadow: 0 10px 35px rgb(18 48 74 / 6%);
+    box-shadow: var(--portal-shadow-sm);
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  }
+
+  .major-path:hover {
+    border-color: color-mix(in srgb, var(--portal-primary) 32%, var(--portal-line));
+    box-shadow: var(--portal-shadow-md);
+    transform: translateY(-2px);
   }
 
   .major-path::before {
@@ -458,7 +499,7 @@
     width: 3.4rem;
     height: 3.4rem;
     place-items: center;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     color: #fff;
     background: var(--portal-ink);
     font-size: 0.9rem;
@@ -515,10 +556,13 @@
 
   .semester-list small {
     color: var(--portal-muted);
-    font-size: 0.68rem;
+    font-size: 0.75rem;
   }
 
   .major-path > a {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
     color: var(--portal-teal-dark);
     font-weight: 750;
     text-decoration: none;
@@ -546,15 +590,17 @@
     border-radius: var(--portal-radius-md);
     color: var(--portal-muted);
     background: color-mix(in srgb, var(--portal-surface) 88%, transparent);
+    box-shadow: var(--portal-shadow-sm);
     text-decoration: none;
+    cursor: pointer;
     transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
   }
 
   .course-preview:hover {
     border-color: color-mix(in srgb, var(--portal-teal) 58%, var(--portal-line));
     color: var(--portal-muted);
-    box-shadow: 0 14px 30px rgb(18 48 74 / 8%);
-    transform: translateY(-3px);
+    box-shadow: var(--portal-shadow-md);
+    transform: translateY(-2px);
   }
 
   .course-preview__meta {
@@ -563,7 +609,7 @@
     align-items: center;
     justify-content: space-between;
     color: var(--portal-teal-dark);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 750;
   }
 
@@ -578,7 +624,7 @@
     display: -webkit-box;
     margin: 0;
     overflow: hidden;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     line-height: 1.55;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -595,7 +641,7 @@
     color: #d8e6e8;
     background:
       radial-gradient(circle at 85% 10%, rgb(126 210 210 / 20%), transparent 15rem),
-      #12304a;
+      #1e3a5f;
   }
 
   .portal-note .eyebrow {
@@ -615,10 +661,17 @@
     flex: 0 0 auto;
     padding: 0.8rem 1rem;
     border-radius: 0.7rem;
-    color: #12304a;
+    min-height: 2.75rem;
+    color: #1e3a5f;
     background: #fff;
     font-weight: 750;
     text-decoration: none;
+    transition: background-color 160ms ease, transform 160ms ease;
+  }
+
+  .portal-note > a:hover {
+    background: #f1f5f9;
+    transform: translateY(-1px);
   }
 
   /* Course explorer */
@@ -656,9 +709,11 @@
     justify-content: space-between;
     margin: 1rem 0 1.5rem;
     padding: 1.6rem;
+    border: 1px solid var(--portal-line);
     border-radius: var(--portal-radius-lg);
     background:
-      linear-gradient(130deg, color-mix(in srgb, var(--portal-teal) 10%, var(--portal-surface)), var(--portal-surface));
+      linear-gradient(130deg, color-mix(in srgb, var(--portal-primary) 8%, var(--portal-surface)), var(--portal-surface));
+    box-shadow: var(--portal-shadow-sm);
   }
 
   .explorer-intro p:last-child {
@@ -677,6 +732,7 @@
     font-size: 2.7rem;
     letter-spacing: -0.06em;
     line-height: 1;
+    font-variant-numeric: tabular-nums;
   }
 
   .explorer-intro__count span {
@@ -692,7 +748,7 @@
     border: 1px solid var(--portal-line);
     border-radius: var(--portal-radius-md);
     background: color-mix(in srgb, var(--portal-surface) 94%, transparent);
-    box-shadow: 0 12px 34px rgb(18 48 74 / 8%);
+    box-shadow: var(--portal-shadow-md);
     backdrop-filter: blur(16px);
   }
 
@@ -707,8 +763,8 @@
   }
 
   .filter-search__control:focus-within {
-    border-color: var(--portal-teal);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--portal-teal) 13%, transparent);
+    border-color: var(--portal-primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--portal-primary) 13%, transparent);
   }
 
   .filter-search input {
@@ -719,6 +775,8 @@
   }
 
   .filter-search button {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
     margin-right: 0.35rem;
     padding: 0.35rem 0.55rem;
     border: 0;
@@ -785,12 +843,13 @@
   }
 
   .active-filters button {
-    padding: 0.33rem 0.55rem;
+    min-height: 2.75rem;
+    padding: 0.45rem 0.7rem;
     border: 1px solid color-mix(in srgb, var(--portal-teal) 30%, var(--portal-line));
     border-radius: 99rem;
     color: var(--portal-teal-dark);
     background: color-mix(in srgb, var(--portal-teal) 8%, var(--portal-surface));
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     cursor: pointer;
   }
 
@@ -809,7 +868,7 @@
   }
 
   .filter-toolbar__actions label span {
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     white-space: nowrap;
   }
 
@@ -827,6 +886,13 @@
     background: var(--portal-surface);
     font-weight: 650;
     cursor: pointer;
+    transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+  }
+
+  .filter-toolbar__actions > button:hover,
+  .empty-results button:hover {
+    border-color: var(--portal-primary);
+    color: var(--portal-primary);
   }
 
   .result-summary {
@@ -834,7 +900,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 1.3rem 0 0.7rem;
-    font-size: 0.78rem;
+    font-size: 0.8rem;
   }
 
   .result-summary p {
@@ -844,6 +910,7 @@
   .result-summary strong {
     color: var(--portal-ink);
     font-size: 1.2rem;
+    font-variant-numeric: tabular-nums;
   }
 
   .course-card-grid {
@@ -859,14 +926,15 @@
     box-sizing: border-box;
     height: 100%;
     min-width: 0;
-    min-height: 13rem;
+    min-height: 13.75rem;
     margin: 0;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.15rem;
     border: 1px solid var(--portal-line);
     border-radius: var(--portal-radius-md);
     color: var(--portal-muted);
     background: var(--portal-surface);
+    box-shadow: var(--portal-shadow-sm);
     text-decoration: none;
     transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
   }
@@ -878,7 +946,7 @@
   .course-card:hover {
     color: var(--portal-muted);
     border-color: color-mix(in srgb, var(--portal-teal) 48%, var(--portal-line));
-    box-shadow: 0 12px 25px rgb(18 48 74 / 8%);
+    box-shadow: var(--portal-shadow-md);
     transform: translateY(-2px);
   }
 
@@ -898,7 +966,7 @@
     overflow: hidden;
     color: var(--portal-teal-dark);
     font-family: var(--sl-font-mono);
-    font-size: 0.71rem;
+    font-size: 0.75rem;
     font-weight: 750;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -910,8 +978,9 @@
     border-radius: 99rem;
     color: var(--portal-muted);
     background: var(--portal-soft);
-    font-size: 0.64rem;
+    font-size: 0.75rem;
     font-weight: 700;
+    font-variant-numeric: tabular-nums;
   }
 
   .stock-badge--available {
@@ -946,8 +1015,14 @@
     border-radius: 99rem;
     color: var(--portal-muted);
     background: var(--portal-soft);
-    font-size: 0.64rem;
+    font-size: 0.75rem;
     text-decoration: none;
+  }
+
+  .placement-links a {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
   }
 
   .course-card__categories {
@@ -956,7 +1031,7 @@
     margin: 0.7rem 0;
     overflow: hidden;
     color: var(--portal-muted);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     line-height: 1.55;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -965,7 +1040,7 @@
   .course-card__action {
     margin-top: auto;
     color: var(--portal-teal-dark);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 750;
     text-decoration: none;
   }
@@ -1003,8 +1078,10 @@
     justify-content: space-between;
     margin: 1rem 0 1.2rem;
     padding: 1.5rem;
+    border: 1px solid var(--portal-line);
     border-radius: var(--portal-radius-lg);
     background: linear-gradient(135deg, var(--portal-surface), var(--portal-soft));
+    box-shadow: var(--portal-shadow-sm);
   }
 
   .curriculum-summary > div > p:last-child {
@@ -1026,7 +1103,7 @@
   }
 
   .curriculum-summary dt {
-    font-size: 0.68rem;
+    font-size: 0.75rem;
   }
 
   .curriculum-summary dd {
@@ -1034,6 +1111,7 @@
     color: var(--portal-ink);
     font-size: 1.45rem;
     font-weight: 800;
+    font-variant-numeric: tabular-nums;
   }
 
   .semester-jump {
@@ -1056,11 +1134,14 @@
   }
 
   .semester-jump a {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
     flex: 0 0 auto;
     padding: 0.45rem 0.65rem;
     border-radius: 0.55rem;
     color: var(--portal-muted);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 680;
     text-decoration: none;
   }
@@ -1096,7 +1177,7 @@
   .semester-section__heading span {
     color: var(--portal-teal);
     font-family: var(--sl-font-mono);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 750;
   }
 
@@ -1108,7 +1189,7 @@
 
   .semester-section__heading p {
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 
   .semester-course-grid {
@@ -1122,23 +1203,28 @@
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
+    min-height: 4rem;
     padding: 0.85rem;
     border: 1px solid var(--portal-line);
     border-radius: 0.8rem;
     color: var(--portal-muted);
     background: var(--portal-surface);
+    box-shadow: var(--portal-shadow-sm);
     text-decoration: none;
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
   }
 
   .semester-course:hover {
     border-color: color-mix(in srgb, var(--portal-teal) 45%, var(--portal-line));
     color: var(--portal-muted);
+    box-shadow: var(--portal-shadow-md);
+    transform: translateY(-1px);
   }
 
   .semester-course span {
     color: var(--portal-teal-dark);
     font-family: var(--sl-font-mono);
-    font-size: 0.66rem;
+    font-size: 0.75rem;
     font-weight: 700;
   }
 
@@ -1152,7 +1238,7 @@
   .semester-course strong {
     flex: 0 0 auto;
     color: var(--portal-teal-dark);
-    font-size: 0.67rem;
+    font-size: 0.75rem;
   }
 
   .semester-course strong.is-empty {
@@ -1162,10 +1248,12 @@
 
   /* Course detail */
   .back-link {
-    display: inline-block;
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
     margin: 0.2rem 0 1rem;
     color: var(--portal-teal-dark);
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-decoration: none;
   }
@@ -1179,6 +1267,7 @@
     border: 1px solid var(--portal-line);
     border-radius: var(--portal-radius-lg);
     background: var(--portal-soft);
+    box-shadow: var(--portal-shadow-sm);
   }
 
   .course-status--available {
@@ -1198,11 +1287,12 @@
   .course-status > a,
   .no-resources > a {
     flex: 0 0 auto;
-    padding: 0.7rem 0.85rem;
+    min-height: 2.75rem;
+    padding: 0.7rem 0.95rem;
     border-radius: 0.65rem;
     color: #fff;
-    background: var(--portal-teal-dark);
-    font-size: 0.75rem;
+    background: var(--portal-primary);
+    font-size: 0.8rem;
     font-weight: 750;
     text-decoration: none;
   }
@@ -1245,7 +1335,8 @@
 
   .detail-section__heading--row > span {
     color: var(--portal-teal-dark);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
     font-weight: 750;
   }
 
@@ -1273,13 +1364,13 @@
 
   .course-facts dt {
     color: var(--portal-muted);
-    font-size: 0.68rem;
+    font-size: 0.75rem;
   }
 
   .course-facts dd {
     margin: 0.26rem 0 0;
     color: var(--portal-ink);
-    font-size: 0.85rem;
+    font-size: 0.875rem;
     font-weight: 680;
     line-height: 1.55;
   }
@@ -1290,7 +1381,7 @@
 
   .placement-block h3 {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .placement-links a:hover {
@@ -1315,7 +1406,7 @@
   .requirement-grid span {
     display: block;
     color: var(--portal-muted);
-    font-size: 0.66rem;
+    font-size: 0.75rem;
   }
 
   .requirement-grid strong {
@@ -1336,6 +1427,7 @@
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 0.45rem;
+    min-height: 5rem;
     padding: 1rem;
     border: 1px solid var(--portal-line);
     border-radius: 0.85rem;
@@ -1357,11 +1449,12 @@
   .resource-category-grid strong {
     color: var(--portal-teal-dark);
     font-size: 1.35rem;
+    font-variant-numeric: tabular-nums;
   }
 
   .resource-category-grid small {
     grid-column: 1 / -1;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
   }
 
   .no-resources {
@@ -1405,7 +1498,7 @@
     margin-top: 2.5rem;
     padding-top: 1rem;
     border-top: 1px solid var(--portal-line);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     line-height: 1.65;
   }
 
@@ -1441,7 +1534,9 @@
 
   @media (max-width: 45rem) {
     .portal-hero {
-      padding-top: 2rem;
+      margin-top: 0.5rem;
+      padding: 2.5rem 1.25rem;
+      border-radius: 1rem;
     }
 
     .portal-hero::before {
@@ -1449,7 +1544,7 @@
     }
 
     .portal-hero h1 {
-      font-size: clamp(2.55rem, 14vw, 4rem);
+      font-size: clamp(2.35rem, 12vw, 3.5rem);
     }
 
     .hero-search__control {

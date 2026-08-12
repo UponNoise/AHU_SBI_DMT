@@ -26,7 +26,7 @@ export default defineConfig({
         },
       ],
       head: [
-        { tag: 'meta', attrs: { name: 'theme-color', content: '#12304a' } },
+        { tag: 'meta', attrs: { name: 'theme-color', content: '#1e3a5f' } },
         { tag: 'meta', attrs: { property: 'og:type', content: 'website' } },
         { tag: 'meta', attrs: { property: 'og:locale', content: 'zh_CN' } },
         { tag: 'meta', attrs: { property: 'og:image', content: `${absoluteBase}/og.png` } },
